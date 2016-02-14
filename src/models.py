@@ -10,8 +10,8 @@ from peewee import Model, SqliteDatabase,\
 logging.basicConfig(level=logging.INFO, format="%(message)s")
 
 # Database variables for each unique package database.
-npm_db = SqliteDatabase('npm_packages.db')
-pypi_db = SqliteDatabase('pypi_packages.db')
+npm_db = SqliteDatabase('db/npm_packages.db')
+pypi_db = SqliteDatabase('db/pypi_packages.db')
 
 
 # Classes unique to each kind of package.
