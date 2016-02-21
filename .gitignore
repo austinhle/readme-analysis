@@ -4,3 +4,4 @@
 *.class
 .idea/
 fetch.log
+*.tsv
