@@ -5,3 +5,4 @@
 .idea/
 fetch.log
 *.tsv
+parser/credentials.txt
