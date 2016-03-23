@@ -1,0 +1,8 @@
+=== Title ===
+An example <b>NodeJS</b> / <b>Mongoose</b> / Express application based on <b>...</b>
+=== URL ===
+https://gist.github.com/1025038
+
+install mongoose , which is a separate package you can get using npm
+need to install mongoose , which is a separate package you can get using npm
+to install mongoose , which is a separate package you can get using npm

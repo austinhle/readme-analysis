@@ -1,0 +1,11 @@
+=== Title ===
+4RC3 findOneAndUpdate returns not updated <b>doc</b> · Issue #2756 <b>...</b>
+=== URL ===
+https://github.com/Automattic/mongoose/issues/2756
+
+callback result is not updated version of document
+updates , but callback result is not updated version of document
+is not updated version of document
+works incorrectly -LRB- it updates , but callback result is not updated version of document -RRB-
+use false by default because IMO mongoose should n't set conflicting defaults unless there 's a very good reason to
+will use false by default because IMO mongoose should n't set conflicting defaults unless there 's a very good reason to

@@ -1,0 +1,10 @@
+=== Title ===
+Easily Develop <b>Node</b>.<b>js</b> and MongoDB Apps with <b>Mongoose</b> | Scotch
+=== URL ===
+https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+
+use mongoose
+to have the date added to if this is the first save , and to on every save
+to add to our Schema to have the date added to if this is the first save , and to on every save
+add to our Schema to have the date added to if this is the first save , and to on every save
+is the code to add to our Schema to have the date added to if this is the first save , and to on every save

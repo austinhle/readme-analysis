@@ -1,0 +1,8 @@
+=== Title ===
+Simple example - <b>Node</b>.<b>js</b>, Restify, MongoDb and <b>Mongoose</b> <b>...</b>
+=== URL ===
+https://cdnjs.com/libraries/backbone.js/tutorials/nodejs-restify-mongodb-mongoose
+
+see how we require our predefined model for messages and also our form template
+require our predefined model for messages and also our form template
+can see how we require our predefined model for messages and also our form template

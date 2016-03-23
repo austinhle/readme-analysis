@@ -1,0 +1,9 @@
+=== Title ===
+Write a todo list with <b>Express</b> and MongoDB | DreamersLab
+=== URL ===
+http://dreamerslab.com/blog/en/write-a-todo-list-with-express-and-mongodb/
+
+express command line tool to generate a project bootstrap Add file to project root Add
+to generate a project bootstrap Add file to project root Add
+generate a project bootstrap Add file to project root Add
+Add an update action so the todo item can be updated with user input text

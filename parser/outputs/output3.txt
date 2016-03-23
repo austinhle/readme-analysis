@@ -1,0 +1,5 @@
+=== Title ===
+[<b>Mongoose</b>] Foreign Key 설정 및 <b>Auto Increment</b> Number 플러그인
+=== URL ===
+http://mobicon.tistory.com/292
+

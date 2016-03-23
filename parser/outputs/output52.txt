@@ -1,0 +1,16 @@
+=== Title ===
+Getting Started with <b>Mongoose</b> and <b>Node</b>.js – A <b>Sample</b> Comments <b>...</b>
+=== URL ===
+http://blog.ijasoneverett.com/2013/11/getting-started-with-mongoose-and-node-js-a-sample-comments-system/
+
+to download and install the nodejs client for mongoose
+download and install the nodejs client for mongoose
+have saved the file run the following code to download and install the nodejs client for mongoose
+saved the file run the following code to download and install the nodejs client for mongoose
+include mongoose
+is include mongoose and get a reference to schema
+include mongoose and get a reference to schema
+do is require mongoose and the Comment model before we can use it
+Open and add the following code : The first thing we do is require mongoose and the Comment model before we can use it
+require mongoose and the Comment model before we can use it
+is require mongoose and the Comment model before we can use it

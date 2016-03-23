@@ -1,0 +1,6 @@
+=== Title ===
+<b>Node</b>.js, <b>Express</b> and <b>Mongoose</b> tutorial
+=== URL ===
+http://theholmesoffice.com/node-js-express-and-mongoose/
+
+taking that , bringing in the model as a local variable and requiring Mongoose

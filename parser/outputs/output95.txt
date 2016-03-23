@@ -1,0 +1,11 @@
+=== Title ===
+<b>Mongoose</b> and <b>Node</b>.<b>js</b> tutorial
+=== URL ===
+http://theholmesoffice.com/mongoose-and-node-js-tutorial/
+
+enter : Now we 're ready to go ! Taking our code from last time as a start point , we are going to need to look at our controller file , and our model file
+cd into the root directory of your site -- I 've made a copy of my `` testpage-site '' folder called `` testpage-mongoose '' -- and enter : Now we 're ready to go ! Taking our code from last time as a start point , we are going to need to look at our controller file , and our model file
+simply closes the database connection
+to require the new model file
+need to require the new model file
+require the new model file

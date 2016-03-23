@@ -70,6 +70,8 @@ public class MyParser {
   private static String password = "";
 
   public static void main(String[] args) {
+    System.out.println("Starting extraction of tasks.");
+
     MyParser mp = new MyParser();
 
     // Load credentials
@@ -79,22 +81,28 @@ public class MyParser {
       password = br.readLine();
       br.close();
     } catch (IOException e) {
-      System.err.println(e);
+      System.out.println(e);
     }
 
     if (user.equals("") || password.equals("")) {
-      System.err.println("Empty credentials were loaded. Please check credentials file.");
+      System.out.println("Empty credentials were loaded. Please check credentials file.");
       return;
     }
+
+    System.out.println("Successfully loaded credentials.");
 
     String title = "";
     String url = "";
     String content = "";
 
     try {
+      System.out.println("Attempting to connect to database...");
       Connection db = DriverManager.getConnection(DB_URL, user, password);
+
+      System.out.println("Successfully connected to database.");
+
       Statement st = db.createStatement();
-      ResultSet rs = st.executeQuery("SELECT title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id LIMIT 3");
+      ResultSet rs = st.executeQuery("SELECT title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id ORDER BY title DESC");
 
       int outIndex = 0;
 
@@ -160,7 +168,7 @@ public class MyParser {
 
     System.out.println(String.format("=== Extracting content #%d ===", outIndex));
 
-    File file = new File(String.format("output%d.txt", outIndex));
+    File file = new File(String.format("output/output%d.txt", outIndex));
     BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 
     bw.write("=== Title ===\n");
@@ -170,6 +178,7 @@ public class MyParser {
     bw.write(url);
     bw.write("\n\n");
 
+    Set<String> keptTasks = new HashSet<String>();
     int numTasksTotal = 0;
     int numTasksAfterFiltering = 0;
 
@@ -192,13 +201,19 @@ public class MyParser {
 
       for (Task task : tasks) {
         numTasksAfterFiltering++;
+        keptTasks.add(task.taskString);
         bw.write(task.taskString);
         bw.write("\n");
       }
     }
 
     System.out.println("Number of tasks before filtering: " + numTasksTotal);
+    bw.write("Tasks before filtering: " + numTasksTotal);
     System.out.println("Remaining number of tasks after filtering: " + numTasksAfterFiltering);
+    bw.write("Tasks after filtering: " + numTasksAfterFiltering);
+    for (String kt : keptTasks) {
+      System.out.println(kt);
+    }
 
     bw.close();
   }

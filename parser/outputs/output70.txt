@@ -1,0 +1,9 @@
+=== Title ===
+<b>Mongoose</b> - <b>Node</b>.js + MongoDB with <b>Mongoose</b> Tutorial
+=== URL ===
+http://www.javabeat.net/mongoose-nodejs-mongodb/
+
+To use mongoose
+taken from the Mongoose API Home page -RRB- To use mongoose
+download the Node package for mongoose API using the following command
+use mongoose

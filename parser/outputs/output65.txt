@@ -1,0 +1,11 @@
+=== Title ===
+Inserting and <b>updating</b> — MongoDB <b>Node</b>.JS Driver 1.4.9 <b>...</b>
+=== URL ===
+https://mongodb.github.io/node-mongodb-native/markdown-docs/insert.html
+
+can be inserted to a collection with insert
+inserted to a collection with insert
+be inserted to a collection with insert
+is false -LRB- only the first one found is updated -RRB- * upsert - if true and no records match the query , insert update as a new record * raw - driver returns updated document as bson binary Buffer
+records that match the query object , default is false -LRB- only the first one found is updated -RRB- * upsert - if true and no records match the query , insert update as a new record * raw - driver returns updated document as bson binary Buffer
+returns updated document as bson binary Buffer

@@ -1,0 +1,10 @@
+=== Title ===
+codetunnel/<b>mongoose</b>-<b>auto</b>-<b>increment</b>
+=== URL ===
+https://github.com/codetunnel/mongoose-auto-increment/issues/40
+
+npm ERR ! argv `` node '' '' / usr/local/bin / npm '' `` install '' `` mongoose-auto-increment '' ''
+npm ERR ! argv `` node '' '' / usr/local/bin / npm '' `` install '' `` mongoose-auto-increment '' '' -- save '' npm ERR ! node URL
+to use the latest mongoose
+'ve to use the latest mongoose
+use the latest mongoose

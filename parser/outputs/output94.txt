@@ -1,0 +1,5 @@
+=== Title ===
+<b>Node</b>.<b>js</b> and MongoDB - Getting Started with <b>Mongoose</b>
+=== URL ===
+http://blog.modulus.io/getting-started-with-mongoose
+
