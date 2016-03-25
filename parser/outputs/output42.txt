@@ -1,8 +1,7 @@
 === Title ===
-An example <b>NodeJS</b> / <b>Mongoose</b> / <b>Express</b> application based on <b>...</b>
+Querying MongoDB from <b>Express</b> using <b>Mongoose</b> for <b>Node</b>.<b>js</b> Code <b>...</b>
 === URL ===
-https://gist.github.com/1025038
+http://runnable.com/U0MpcpIzdaRkX2VH/querying-mongodb-from-express-using-mongoose-for-node-js
 
-to install mongoose , which is a separate package you can get using npm
-need to install mongoose , which is a separate package you can get using npm
-install mongoose , which is a separate package you can get using npm
+using express
+Tasks before filtering: 35Tasks after filtering: 1

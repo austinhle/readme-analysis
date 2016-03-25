@@ -1,0 +1,38 @@
+=== Title ===
+<b>Node</b>, Express, and <b>MongoDB</b> - a primer - Michael Herman
+=== URL ===
+http://mherman.org/blog/2014/12/31/node-and-mongoose-a-primer/
+
+create an interactive form
+let 's create an interactive form
+will be used to create a basic project for us
+installing the Express generator , which will be used to create a basic project for us
+used to create a basic project for us
+create a basic project for us
+be used to create a basic project for us
+to create a basic project for us
+stores your project 's dependencies , which we still need to install
+is this file this file ? It 's at the top ,
+Use the variable to require a JS file within our routes folder
+to require a JS file within our routes folder
+require a JS file within our routes folder
+'s a relationship between those two files
+Do you see the form ? Try clicking save
+see the form ? Try clicking save
+let 's now setup Mongoose to save the data from our form
+are handling the routes , rendering the right template , let 's now setup Mongoose to save the data from our form
+handling the routes , rendering the right template , let 's now setup Mongoose to save the data from our form
+setup Mongoose to save the data from our form
+'s now setup Mongoose to save the data from our form
+save the data from our form
+to save the data from our form
+URL require the Mongoose config at the very top of the file
+use that variable in our Jade file
+can now use that variable in our Jade file
+insert data into the Mongo collection
+to insert data into the Mongo collection
+add the logic to insert data into the Mongo collection
+to add the logic to insert data into the Mongo collection
+display comments - we first need to add the logic to insert data into the Mongo collection
+need to add the logic to insert data into the Mongo collection
+Tasks before filtering: 338Tasks after filtering: 32

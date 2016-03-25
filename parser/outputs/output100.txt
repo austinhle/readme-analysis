@@ -1,5 +1,29 @@
 === Title ===
-<b>Mongoose</b> ODM v4.4.7
+GitHub - Automattic/<b>mongoose</b>: MongoDB object modeling designed <b>...</b>
 === URL ===
-http://mongoosejs.com/
+https://github.com/Automattic/mongoose
 
+using the repository 's web address
+uses only one database
+create additional connections
+to create additional connections
+need to create additional connections
+buffers all the commands until it 's connected to the database
+connected to the database
+'s connected to the database
+is the singular name of the collection your model is for
+will create the model for your tickets collection , not your ticket collection
+create the model for your tickets collection , not your ticket collection
+find documents from the same collection
+can find documents from the same collection
+opened a separate connection using
+opened a separate connection using
+access your model through the connection you created
+defined a key in the Schema that looks like : Where is a we created
+Embedded Documents In the first example snippet , we defined a key in the Schema that looks like : Where is a we created
+creating embedded documents is as simple as : The same
+means that creating embedded documents is as simple as : The same goes for removing them
+used in a schema
+bypasses all mongoose features , including hooks , validation , etc
+using the collection object
+Tasks before filtering: 283Tasks after filtering: 23

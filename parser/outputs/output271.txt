@@ -1,0 +1,42 @@
+=== Title ===
+Android Login Registration System with <b>Node</b>.<b>js</b> and MongoDB <b>...</b>
+=== URL ===
+http://dataops.co/android-login-registration-system-with-node-js-and-mongodb/
+
+to install modules
+install modules
+file include the following dependencies
+use these packages
+see why we use these packages
+used to get the Gravatar Image URL of the user
+get the Gravatar Image URL of the user
+is used to get the Gravatar Image URL of the user
+to get the Gravatar Image URL of the user
+is the directory of the login module
+returns the result back to the user in JSON format
+are of String type
+is `` mongodb : / / localhost :27017 / node-android ''
+use easily in all our modules
+defined globally in URL so that we can use easily in all our modules
+can use easily in all our modules
+is defined globally in URL so that we can use easily in all our modules
+using SHA512 encryption
+hashed using SHA512 encryption
+are encrypting our data by using salt
+is hashed using SHA512 encryption
+stored in the database
+is stored in the database
+encrypting our data by using salt
+to change the password in profile page by getting old password , new password
+getting old password , new password
+is used to change the password in profile page by getting old password , new password
+used to change the password in profile page by getting old password , new password
+change the password in profile page by getting old password , new password
+match new password is set
+stored in the database
+sent new password is set
+matches with the one which is sent new password is set
+is sent new password is set
+have set the server part
+set the server part
+Tasks before filtering: 305Tasks after filtering: 36

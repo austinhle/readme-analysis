@@ -1,0 +1,27 @@
+=== Title ===
+(<b>node</b>-<b>gyp rebuild 2</b>&gt; <b>builderror</b>.<b>log</b>) || (exit 0)
+=== URL ===
+https://github.com/socketio/socket.io/issues/1126
+
+removing all the testacular installs from my system -LRB- both as user
+removing all the testacular installs from my system -LRB- both as user
+fixed it by removing all the testacular installs from my system -LRB- both as user
+are correct without any errors
+get the same error as @pgbi
+> I get the same error as @pgbi
+commented Feb 9 , 2013 < > I get the same error as @pgbi
+< > I get the same error as @pgbi
+Got this error using Ubuntu URL , has n't node got any dependency management like
+commented Feb 13 , 2013 < > Got this error using Ubuntu URL , has n't node got any dependency management like
+connect to a really slow server
+would connect to a really slow server
+install - g node-gyp
+'s not an error then
+installing modules as npm
+is not an error
+Glad it is not an error
+commented Feb 18 , 2015 < > ` Not an error ' is fair enough
+is just one of several packages whose optional native dependencies crash Docker in certain combinations with other native dependencies being installed concurrently by NPM
+commented Feb 18 , 2015 < > FYI in my case it turns out URL is just one of several packages whose optional native dependencies crash Docker in certain combinations with other native dependencies being installed concurrently by NPM
+crash Docker in certain combinations with other native dependencies being installed concurrently by NPM
+Tasks before filtering: 253Tasks after filtering: 21

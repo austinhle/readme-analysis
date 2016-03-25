@@ -1,10 +1,32 @@
 === Title ===
-Easily Develop <b>Node</b>.js and MongoDB Apps with <b>Mongoose</b> | Scotch
+Introducing Version 4.0 of the <b>Mongoose NodeJS</b> ODM | <b>MongoDB</b>
 === URL ===
-https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+https://www.mongodb.com/blog/post/introducing-version-40-mongoose-nodejs-odm
 
-use mongoose
-to add to our Schema to have the date added to if this is the first save , and to on every save
-to have the date added to if this is the first save , and to on every save
-add to our Schema to have the date added to if this is the first save , and to on every save
-is the code to add to our Schema to have the date added to if this is the first save , and to on every save
+convert to if your schema said was a string
+would convert to if your schema said was a string
+would allow you to your field , even if your schema said it was required
+allow you to your field , even if your schema said it was required
+will get an error
+get an error
+be in your application 's memory at
+might not be in your application 's memory at
+Update validators do n't have access to the entire document - the document being updated might not be in your application 's memory at
+refers to the document being updated
+lies in the fact that , in document validators , refers to the document being updated
+be null in your custom validators
+will be null in your custom validators
+is no underlying document , so will be null in your custom validators
+break because many custom validators use
+would break because many custom validators use
+setting default update options is just one application of the next feature
+Pre Post Hooks for Queries The other new Mongoose 4 feature you will learn about in this article is pre
+learn about in this article is pre
+Pre Post Hooks for Queries The other new Mongoose 4 feature you will learn about in this article is pre
+is pre
+will learn about in this article is pre
+is the ability to automatically documents
+requested Mongoose features URL is the ability to automatically documents
+features URL is the ability to automatically documents
+is , at a surface level , analogous to an SQL join
+Tasks before filtering: 225Tasks after filtering: 26

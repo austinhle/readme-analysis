@@ -1,0 +1,16 @@
+=== Title ===
+<b>Mongoose</b> Middleware v4.4.7
+=== URL ===
+http://mongoosejs.com/docs/middleware.html
+
+is no query hook for , only for documents
+Pre There are two types of hooks , serial
+are two types of hooks , serial
+removing a user removes all his blogposts
+removing dependent documents *
+refers to the document being updated
+have a reference to the document being updated , so refers to the query object rather than the document being updated
+does n't necessarily have a reference to the document being updated , so refers to the query object rather than the document being updated
+would use the following pre hook
+use the following pre hook
+Tasks before filtering: 137Tasks after filtering: 10

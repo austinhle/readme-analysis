@@ -1,6 +1,36 @@
 === Title ===
-<b>Mongoose</b> Quick Start v4.4.7
+Switching out callbacks with promises in <b>Mongoose</b>
 === URL ===
-http://mongoosejs.com/docs/
+http://eddywashere.com/blog/switching-out-callbacks-with-promises-in-mongoose/
 
-include mongoose in our project
+thempromise URL way of using promises
+using promises
+to thempromise URL way of using promises
+was limited to thempromise URL way of using promises
+limited to thempromise URL way of using promises
+meant there was n't a friendly method available to the promise chain
+was n't a friendly method available to the promise chain
+using promises
+using mongoose
+need to require the promise library
+to require the promise library
+'ll also need to require the promise library
+require the promise library
+Here 's the example for using native promises
+using native promises
+set the promise library to bluebird
+set the promise library to bluebird : Here 's the example for using native promises
+look up a user by id , update the user 's name ,
+update the user 's name
+'ll look up a user by id , update the user 's name ,
+using promises
+'ll show what the same task looks like using promises
+show what the same task looks like using promises
+looks like using promises
+'ll switch to using Model queries that return a promise via the function
+using Model queries
+switch to using Model queries that return a promise via the function
+was only one error handler for both of the promises ,
+Note that there was only one error handler for both of the promises ,
+using promises
+Tasks before filtering: 80Tasks after filtering: 30

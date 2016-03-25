@@ -1,0 +1,64 @@
+=== Title ===
+Create a REST API With <b>Node</b>.js - Labs at Big Spaceship
+=== URL ===
+http://bigspaceship.github.io/blog/2014/05/14/how-to-create-a-rest-api-with-node-dot-js
+
+read our URL URL file saved to the root of our project directory
+will read our URL URL file saved to the root of our project directory ,
+read our URL URL file saved to the root of our project directory ,
+saved to the root of our project directory
+required in your first version of URL , you 'll require Express
+set up our server
+require a full server restart in order to be run the updated version
+run the updated version
+to be run the updated version
+restart in order to be run the updated version
+be run the updated version
+sending a text/html Content-Type Header instead of text/plain -LRB- Express is for web after all -RRB-
+is for web after all
+is sending a text/html Content-Type Header instead of text/plain -LRB- Express is for web after all -RRB-
+to respond with * Place to store the data * Interface to access
+to store the data * Interface
+respond with * Place to store the data * Interface to access
+store the data * Interface
+* A handler method This example of routing
+will be keyed the same name as our param in the route path
+be keyed the same name as our param in the route path
+keyed the same name as our param in the route path
+modeled our URL routes off of REST API conventions
+modeled our URL routes off of REST API conventions ,
+'ve modeled our URL routes off of REST API conventions ,
+require our routes file
+URL to require our routes file
+to require our routes file
+Ask NPM to install this dependency for you ,
+install this dependency for you
+update your URL file with this dependency for you with the option
+install this dependency for you ,
+to install this dependency for you ,
+handler there to help debug issues connecting to Mongo collections
+added an error handler there to help debug issues connecting to Mongo collections
+help debug issues connecting to Mongo collections
+to help debug issues connecting to Mongo collections
+connecting to Mongo collections
+to query Mongo with the data model method
+query Mongo with the data model method
+means we are not filtering data by any of its properties , so please return all of it
+looks up the data it returns an error message
+returns an error message
+get JSON data back , in the form of an empty array
+'ll get JSON data back , in the form of an empty array
+getting a musician by its id
+Find By Id Recall our route for getting a musician by its id
+uses a parameter pattern for id
+is the handler method : This route 's path uses a parameter pattern for id
+return just one document
+'ll get a single JSON object for that one musician 's document
+get a single JSON object for that one musician 's document
+returns the number of documents updated Test with cURL PUT actions are not easy to test in the browser
+object of matching properties to look up the doc with to update * JSON object of just the properties to update * callback function that returns the number of documents updated Test with cURL PUT actions are not easy to test in the browser
+matching properties to look up the doc with to update * JSON object of just the properties to update * callback function that returns the number of documents updated Test with cURL PUT actions are not easy to test in the browser
+to look up the doc with to update * JSON object of just the properties to update * callback function that returns the number of documents updated Test with cURL PUT actions are not easy to test in the browser
+look up the doc with to update * JSON object of just the properties to update * callback function that returns the number of documents updated Test with cURL PUT actions are not easy to test in the browser
+is the id of the musician we want to update
+Tasks before filtering: 503Tasks after filtering: 58

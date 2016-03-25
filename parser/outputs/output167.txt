@@ -1,0 +1,169 @@
+=== Title ===
+<b>Node</b>.js Tutorial: Using <b>MongoDB</b>
+=== URL ===
+http://blog.modulus.io/mongodb-tutorial
+
+is an increasingly popular document-based , high-performance NoSQL database
+Using MongoDB with URL In this tutorial you learn how to use MongoDB with URL
+is an increasingly popular document-based , high-performance NoSQL database
+stored as a document as a set of key-value pairs
+is stored as a document as a set of key-value pairs
+are simply a set of documents that consist of data stored as a key-value pair
+consist of data stored as a key-value pair
+to create a connection
+need to create a connection
+create a connection
+will be using MongoDB 's native URL driver to create the connection with the MongoDB server
+be using MongoDB 's native URL driver to create the connection with the MongoDB server
+to create the connection with the MongoDB server
+using MongoDB 's native URL driver to create the connection with the MongoDB server
+create the connection with the MongoDB server
+To install the mongodb native drivers
+install the mongodb native drivers
+install command was used to install the required module in our project
+used to install the required module in our project
+to install the required module in our project
+was used to install the required module in our project
+install the required module in our project
+create a new blank JS file in the project directory
+create a new blank JS file in the project directory
+connect to the database server
+should be able to connect to the database server
+be able to connect to the database server
+should create a new blank JS file in the project directory
+assuming your database is running on the url mentioned above -LRB- in this case it 's localhost -RRB-
+then running the above file using node
+using node
+to connect to the database server
+represents the location where the mongodb server instance is running such that we can connect to it
+contains the database name to which we intend to connect
+use the MongoClient interface to connect to the database
+to connect to the database
+Connect to the database : Let 's use the MongoClient interface to connect to the database
+connect to the database
+get error
+keep in mind when using the mongodb native driver
+are a couple of things to keep in mind when using the mongodb native driver
+using the mongodb native driver
+to keep in mind when using the mongodb native driver
+are similar to that of native mongodb commands
+need to create a users collection
+create a users collection
+save a few users in it
+assume that we need to create a users collection
+create a users collection
+to create a users collection
+to save the user 's info
+use the insert method to save the user 's info
+save the user 's info
+will use the insert method to save the user 's info
+get the reference to our users collection
+to get the reference to our users collection
+used URL method to get the reference to our users collection
+will be created on the first insert
+be created on the first insert
+created on the first insert
+need to create a collection explicitly
+create a collection explicitly
+to create a collection explicitly
+do n't need to create a collection explicitly
+is no fixed schema of the document , they are simple JS Objects with entity 's data
+Insert into the database : We used URL to insert our data in the database collection
+insert our data in the database collection
+used URL to insert our data in the database collection
+to insert our data in the database collection
+save only one document -LRB- one user 's info -RRB-
+to save only one document -LRB- one user 's info -RRB-
+pass that in the insert method as it is , i
+need to save only one document -LRB- one user 's info -RRB-
+can pass that in the insert method as it is , i
+is error
+function for the insert method has two parameters , first is error
+is an error
+be an array of documents saved
+will be an array of documents saved
+update the records we use URL method
+use URL method
+Updating the documents in MongoDB To update the records we use URL method
+To update the records we use URL method
+are similar to that of native mongodb queries
+find command on the collection object
+is an example below
+to find because running find alone returns a db cursor
+find because running find alone returns a db cursor
+returns a db cursor
+iterate over the cursor
+to iterate over the cursor
+iterate over the cursor
+have to iterate over the cursor
+would have to iterate over the cursor
+want full data of each user , which is then returned
+Example using DB cursor Let 's see how we can use the db cursor
+Let 's see how we can use the db cursor
+see how we can use the db cursor
+Example using DB cursor Let 's see how we can use the db cursor
+use the db cursor
+using DB cursor Let 's see how we can use the db cursor
+can use the db cursor
+return the full array of all documents as in the previous example
+to return the full array of all documents as in the previous example
+can also use toArray to return the full array of all documents as in the previous example
+use toArray to return the full array of all documents as in the previous example
+like remove to delete documents , count to count the documents
+remove to delete documents , count to count the documents
+to count the documents
+count the documents
+delete documents
+count to count the documents
+remove to delete documents
+are other methods like remove to delete documents , count to count the documents ,
+to delete documents
+includes built-in type casting , validation , query building , business logic hooks
+is a very popular library in URL which provides a straightforward , schema-based solution to modeling your application data
+provides a straightforward , schema-based solution to modeling your application data
+provides a straightforward , schema-based solution to modeling your application data
+modeling your application data
+using Mongoose ODM module in URL MongooseJS
+to modeling your application data
+makes it simple to work with mongodb using its interface features
+to work with mongodb using its interface features
+work with mongodb using its interface features
+makes it simple to work with mongodb using its interface features
+work with mongoose we need to install the mongoose module
+To work with mongoose we need to install the mongoose module
+install the mongoose module
+need to install the mongoose module
+to install the mongoose module
+to write the above example using mongoose
+write the above example using mongoose
+using mongoose
+to install the mongoose module : Now
+install the mongoose module : Now
+let 's try to write the above example using mongoose
+used the URL method to connect to the database
+to connect to the database
+connect to the database
+try to write the above example using mongoose
+created a Model using URL method
+using URL method
+be created in mongodb
+created in mongodb
+will be created in mongodb
+object using our model
+using our model
+created a new User object using our model
+can create as many user objects using our model
+create as many user objects using our model
+using our model
+used the save method to save the document in the database
+save the document in the database
+to save the document in the database
+can also use the Model to query database
+use the Model to query database
+find a user
+see an example below where we try to find a user
+find a user
+to find a user
+try to find a user
+included in Enterprise version
+Tasks before filtering: 405Tasks after filtering: 163

@@ -1,9 +1,7 @@
 === Title ===
-Write a todo list with <b>Express</b> and MongoDB | DreamersLab
+Querying MongoDB from <b>Express</b> using <b>Mongoose</b> for <b>Node</b>.js Code <b>...</b>
 === URL ===
-http://dreamerslab.com/blog/en/write-a-todo-list-with-express-and-mongodb/
+http://runnable.com/U0MpcpIzdaRkX2VH/querying-mongodb-from-express-using-mongoose-for-node-js
 
-to generate a project bootstrap Add file to project root Add
-generate a project bootstrap Add file to project root Add
-express command line tool to generate a project bootstrap Add file to project root Add
-Add an update action so the todo item can be updated with user input text
+using express
+Tasks before filtering: 35Tasks after filtering: 1

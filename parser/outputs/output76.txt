@@ -1,19 +1,70 @@
 === Title ===
-Creating RESTful APIs With <b>NodeJS</b> and MongoDB <b>Tutorial</b> (Part II <b>...</b>
+How To Implement Password Reset In <b>Node</b>.<b>js</b>
 === URL ===
-http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb
+http://sahatyalkabov.com/how-to-implement-password-reset-in-nodejs/
 
-Welcome to this RESTful API using URL -LRB- URL -RRB- and MongoDB -LRB- mongoose -RRB- tutorial
-using URL -LRB- URL -RRB- and MongoDB -LRB- mongoose -RRB- tutorial
-, , , ... Here 's is a summary what we want to implement : Resource -LRB- URI -RRB- POST -LRB- create -RRB- GET -LRB- read -RRB- PUT -LRB- update -RRB- DELETE -LRB- destroy -RRB- / todos create new task list tasks N/A -LRB- update all -RRB- N/A
-, , ... Here 's is a summary what we want to implement : Resource -LRB- URI -RRB- POST -LRB- create -RRB- GET -LRB- read -RRB- PUT -LRB- update -RRB- DELETE -LRB- destroy -RRB- / todos create new task list tasks N/A -LRB- update all -RRB- N/A
-need to require mongoose in the
-to require mongoose in the
-require mongoose in the
-to create using mongoose
-add the ability to create using mongoose
-create using mongoose
-to add the ability to create using mongoose
-using mongoose
-are going to add the ability to create using mongoose
-going to add the ability to create using mongoose
+create a forgot your password feature using Express , MongoDB , Passport
+> * GitHub URL How To Implement Password Reset In URL In this tutorial , we 'll go over how to create a forgot your password feature using Express , MongoDB , Passport
+go over how to create a forgot your password feature using Express , MongoDB , Passport
+to create a forgot your password feature using Express , MongoDB , Passport
+'ll go over how to create a forgot your password feature using Express , MongoDB , Passport
+begin by installing the Express application generator
+Let 's begin by installing the Express application generator
+installing the Express application generator
+allow us to create a new Express project skeleton from the command line
+will allow us to create a new Express project skeleton from the command line
+create a new Express project skeleton from the command line
+to create a new Express project skeleton from the command line
+created by the Express generator
+dealing with nested callbacks by using with the help of method
+avoid dealing with nested callbacks by using with the help of method
+using with the help of method
+to avoid dealing with nested callbacks by using with the help of method
+recall how many times I have installed packages locally
+ca n't recall how many times I have installed packages locally ,
+installed packages locally
+ca n't recall how many times I have installed packages locally
+have installed packages locally
+install library as it is part of URL
+did n't have to install library as it is part of URL
+have to install library as it is part of URL
+to install library as it is part of URL
+are not part of the above document
+creating a new user
+will not be set when creating a new user
+set when creating a new user
+be set when creating a new user
+store passwords in plaintext , clearly visible
+to store passwords in plaintext , clearly visible
+would not be smart to store passwords in plaintext , clearly visible
+be smart to store passwords in plaintext , clearly visible
+will use the following Mongoose instance method
+use the following Mongoose instance method
+Add this line right after the instance method we have just defined : Before we can interact with the database , we must first connect to one
+have created just for this tutorial
+created just for this tutorial
+use this demo database that I have created just for this tutorial
+may use this demo database that I have created just for this tutorial
+need to configure three pieces to use Passport for authentication
+use Passport for authentication
+to use Passport for authentication
+configure three pieces to use Passport for authentication
+to configure three pieces to use Passport for authentication
+check if user is signed-in
+To check if user is signed-in
+create a login template
+let 's create a login template
+get an error , because we have n't created route yet
+created route yet
+have n't created route yet
+will get an error , because we have n't created route yet
+created any users yet
+have a fully working login form , except there is no way to test it
+have n't created any users yet
+was the entire point of this tutorial
+send out an e-mail to the user using Nodemailer URL
+is very similar to the route
+begin by checking if the password reset token is still valid
+checking if the password reset token is still valid
+update his/her password
+Tasks before filtering: 490Tasks after filtering: 64

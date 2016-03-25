@@ -1,8 +1,11 @@
 === Title ===
-An example <b>NodeJS</b> / <b>Mongoose</b> / Express application based on <b>...</b>
+Model <b>inheritance</b> with <b>node</b>.js and <b>mongoose</b> | laplace&#39;s demon
 === URL ===
-https://gist.github.com/1025038
+http://www.laplacesdemon.com/2014/02/19/model-inheritance-node-js-mongoose/
 
-install mongoose , which is a separate package you can get using npm
-need to install mongoose , which is a separate package you can get using npm
-to install mongoose , which is a separate package you can get using npm
+is the javascript way of inheritance
+defined ` Animal ` model which is the base model of all animals
+is the base model of all animals
+can provide an example it would be great
+provide an example it would be great
+Tasks before filtering: 108Tasks after filtering: 5

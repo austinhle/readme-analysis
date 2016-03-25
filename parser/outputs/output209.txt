@@ -1,0 +1,21 @@
+=== Title ===
+<b>Mongoose Documents</b> v4.4.7
+=== URL ===
+http://mongoosejs.com/docs/documents.html
+
+URL * prior releases < > Documents Mongoose documents < > represent a one-to-one mapping to documents as stored in MongoDB
+represent a one-to-one mapping to documents as stored in MongoDB
+start < > * contributors URL * prior releases < > Documents Mongoose documents < > represent a one-to-one mapping to documents as stored in MongoDB
+are a number of ways to update documents
+to update documents
+update documents
+Updating There are a number of ways to update documents
+do n't need the document returned in our application
+to update a property in the database directly
+update a property in the database directly
+do need the document returned in our application
+merely want to update a property in the database directly
+need the document returned in our application
+need the document returned in our application
+do n't need the document returned in our application
+Tasks before filtering: 71Tasks after filtering: 15

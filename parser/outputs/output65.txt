@@ -1,11 +1,15 @@
 === Title ===
-Inserting and <b>updating</b> — MongoDB <b>Node</b>.JS Driver 1.4.9 <b>...</b>
+Laboard won&#39;t start (#18) · Issues · laboard / laboard · GitLab
 === URL ===
-https://mongodb.github.io/node-mongodb-native/markdown-docs/insert.html
+https://gitlab.com/laboard/laboard/issues/18
 
-can be inserted to a collection with insert
-inserted to a collection with insert
-be inserted to a collection with insert
-is false -LRB- only the first one found is updated -RRB- * upsert - if true and no records match the query , insert update as a new record * raw - driver returns updated document as bson binary Buffer
-records that match the query object , default is false -LRB- only the first one found is updated -RRB- * upsert - if true and no records match the query , insert update as a new record * raw - driver returns updated document as bson binary Buffer
-returns updated document as bson binary Buffer
+should consider using tags -LRB- 1
+using tags
+consider using tags -LRB- 1
+is the installation log : This is my configuration files :
+is my configuration files
+get the same error
+using port so no need to use
+are using port so no need to use
+updating node
+Tasks before filtering: 215Tasks after filtering: 9

@@ -1,8 +1,6 @@
 === Title ===
-Simple example - <b>Node</b>.<b>js</b>, Restify, MongoDb and <b>Mongoose</b> <b>...</b>
+ForestAdmin/forest-express-<b>mongoose</b> - Travis CI
 === URL ===
-https://cdnjs.com/libraries/backbone.js/tutorials/nodejs-restify-mongodb-mongoose
+https://travis-ci.org/ForestAdmin/forest-express-mongoose
 
-can see how we require our predefined model for messages and also our form template
-see how we require our predefined model for messages and also our form template
-require our predefined model for messages and also our form template
+Tasks before filtering: 12Tasks after filtering: 0

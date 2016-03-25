@@ -1,7 +1,51 @@
 === Title ===
-Querying MongoDB from Express using <b>Mongoose</b> for <b>Node</b>.js Code <b>...</b>
+Password Authentication with <b>Mongoose</b> Part 1
 === URL ===
-http://runnable.com/U0MpcpIzdaRkX2VH/querying-mongodb-from-express-using-mongoose-for-node-js
+http://blog.mongodb.org/post/32866457221/password-authentication-with-mongoose-part-1
 
-express < > * URL < > * mongoose < > * mongodb < > * Related Code * MUltiple View < > * FizzBuzz < > * Challenge1 < > * Realtime Canvas < > * Node JS login & logout < > * RESTful Express < > * Is it possible to ` bind ` a handlebars helper before render ? -LRB- using express & hbs -RRB-
-< > * Tags * express < > * URL < > * mongoose < > * mongodb < > * Related Code * MUltiple View < > * FizzBuzz < > * Challenge1 < > * Realtime Canvas < > * Node JS login & logout < > * RESTful Express < > * Is it possible to ` bind ` a handlebars helper before render ? -LRB- using express & hbs -RRB-
+subsequently use the encrypted password for login verification
+to subsequently use the encrypted password for login verification
+recommended Coda Hale 's excellent article onhow to safely store a password URL
+safely store a password URL
+'re not familiar with bcrypt
+to safely store a password URL
+avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+should be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+are n't too familiar with Mongoose schemas
+to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+start things off , let 's create our bare bones representation of a user
+let 's create our bare bones representation of a user
+create our bare bones representation of a user
+To start things off , let 's create our bare bones representation of a user
+bcrypt in particular uses
+hash the password before it 's saved to the database
+is some Mongoose middleware that will automatically hash the password before it 's saved to the database
+'s saved to the database
+saved to the database
+will automatically hash the password before it 's saved to the database
+saved to the database
+looks like : The above code will accomplish our goal of always hashing the password when a document is saved to the database
+will accomplish our goal of always hashing the password when a document is saved to the database
+accomplish our goal of always hashing the password when a document is saved to the database
+hashing the password when a document is saved to the database
+is saved to the database
+hashed until the document is saved
+to be aware of though : Because passwords are not hashed until the document is saved , be careful if you 're interacting with documents that were not retrieved from the database , as any passwords will still be in cleartext
+are not hashed until the document is saved
+be aware of though : Because passwords are not hashed until the document is saved
+are a couple things to be aware of though : Because passwords are not hashed until the document is saved , be careful if you 're interacting with documents that were not retrieved from the database , as any passwords will still be in cleartext
+be aware of though : Because passwords are not hashed until the document is saved , be careful if you 're interacting with documents that were not retrieved from the database , as any passwords will still be in cleartext
+to update user passwords
+must use a if you want to update user passwords
+use a if you want to update user passwords
+invoked on operations , so you must use a if you want to update user passwords
+want to update user passwords
+update user passwords
+is not invoked on operations , so you must use a if you want to update user passwords
+'ll discuss preventing brute-force attacks by enforcing a maximum number of failed login URL for reading
+preventing brute-force attacks by enforcing a maximum number of failed login URL for reading
+discuss preventing brute-force attacks by enforcing a maximum number of failed login URL for reading
+enforcing a maximum number of failed login URL for reading
+Tasks before filtering: 180Tasks after filtering: 45

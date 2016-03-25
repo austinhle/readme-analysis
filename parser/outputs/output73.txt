@@ -1,6 +1,43 @@
 === Title ===
-<b>Mongoose</b> Quick Start v4.4.7
+Implement <b>Schema</b> Inherence in <b>Mongoose</b>
 === URL ===
-http://mongoosejs.com/docs/
+http://geekswithblogs.net/shaunxu/archive/2016/01/14/implement-schema-inherence-in-mongoose.aspx
 
-include mongoose in our project
+created project as azure cloud service === > No
+share part of schema between collections
+needs to share part of schema between collections
+found it needs to share part of schema between collections
+to share part of schema between collections
+became more complex we found it needs to share part of schema between collections
+there are two collection one for event series
+share schema
+came we know there will be more cases needs to share schema
+know there will be more cases needs to share schema
+will be more cases needs to share schema
+be more cases needs to share schema
+needs to share schema
+to share schema
+move the shared definition in a separate file
+move the shared definition in a separate file
+is to move the shared definition in a separate file
+to move the shared definition in a separate file
+is the shared calendar event details definition in our Worktile Enterprise
+defined event series schema we required the code we created previously
+defined the shared schema in one place
+was using it in several collections
+using it in several collections
+put shared schema in a property
+to put shared schema in a property
+load the shared schema JSON
+assuming we have shared schema as below
+have shared schema as below
+shared schema as below
+attempting to use MongoDB as a relational database
+use MongoDB as a relational database
+looks like attempting to use MongoDB as a relational database
+should be admitted that this looks like attempting to use MongoDB as a relational database
+admitted that this looks like attempting to use MongoDB as a relational database
+be admitted that this looks like attempting to use MongoDB as a relational database
+to use MongoDB as a relational database
+put then shared properties into a sub document
+Tasks before filtering: 215Tasks after filtering: 37

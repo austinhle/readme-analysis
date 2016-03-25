@@ -1,5 +1,14 @@
 === Title ===
-<b>Node</b>.<b>js</b> MongoDB Tutorial using <b>Mongoose</b> - YouTube
+GitHub - edwardhotchkiss/<b>mongoose</b>-paginate: <b>Mongoose</b>.<b>js</b> (<b>Node</b> <b>...</b>
 === URL ===
-https://www.youtube.com/watch?v=5e1NEdfs4is
+https://github.com/edwardhotchkiss/mongoose-paginate
 
+using the repository 's web address
+then use model method
+can use to get only metadata : < > Set custom default options for all queries URL : URL : < > Tests < > License MIT
+limit You can use to get only metadata : < > Set custom default options for all queries URL : URL : < > Tests < > License MIT
+get only metadata : < > Set custom default options for all queries URL : URL : < > Tests < > License MIT
+to get only metadata : < > Set custom default options for all queries URL : URL : < > Tests < > License MIT
+use to get only metadata : < > Set custom default options for all queries URL : URL : < > Tests < > License MIT
+return 10 documents
+Tasks before filtering: 103Tasks after filtering: 8

@@ -1,10 +1,11 @@
 === Title ===
-Easily Develop <b>Node</b>.<b>js</b> and MongoDB Apps with <b>Mongoose</b> | Scotch
+How To Setup Primary Key With <b>Auto Increment</b> In <b>Node</b>.<b>JS</b> - YouTube
 === URL ===
-https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+https://www.youtube.com/watch?v=vhp1cuR-vJg
 
-use mongoose
-to have the date added to if this is the first save , and to on every save
-to add to our Schema to have the date added to if this is the first save , and to on every save
-add to our Schema to have the date added to if this is the first save , and to on every save
-is the code to add to our Schema to have the date added to if this is the first save , and to on every save
+to generate primary key automatically using the hibernate framework
+Cast 1,449 views < > < > 12:48 * Hibernate Tutorial : How to generate primary key automatically using the hibernate framework
+generate primary key automatically using the hibernate framework
+is the best template engine for URL
+10,115 views < > < > 4:44 * What is the best template engine for URL - Duration : 8:42
+Tasks before filtering: 93Tasks after filtering: 5

@@ -1,8 +1,10 @@
 === Title ===
-<b>node</b>.js and mongo (using <b>mongoose</b>) tutorial - ps: it&#39;s mike
+Intro to <b>mongo</b> and using it with <b>nodejs</b> or through <b>mongoose</b> <b>...</b>
 === URL ===
-http://psitsmike.com/2012/02/node-js-and-mongo-using-mongoose-tutorial/
+https://www.youtube.com/watch?v=L6i4v-nPteg
 
-using mongoose
-using mongoose
-empty < > CAPTCHA Code * Continuing the Discussion * -LSB- ... -RSB- URL / Mongodb / Mongoose Tutorial -LSB- ... -RSB- Nodester URL + Express + Mongo App Part 1 -- Nodester | Java Development with MongoDB URL -- March 29 , 2013 @ 9:17 am URL * -LSB- ... -RSB- URL and mongo -LRB- using mongoose -RRB- tutorial -- michael mukhin -LSB- ... -RSB- Useful js | Pearltrees URL ,6 > -- August 14 , 2013
+Published on Oct 29 , 2012 This is an introduction to mongodb , along with how to use mongo from nodejs via either node-mongodb-native
+use mongo from nodejs via either node-mongodb-native
+to use mongo from nodejs via either node-mongodb-native
+is an introduction to mongodb , along with how to use mongo from nodejs via either node-mongodb-native
+Tasks before filtering: 105Tasks after filtering: 4

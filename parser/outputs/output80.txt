@@ -1,9 +1,9 @@
 === Title ===
-Write a todo list with Express and MongoDB | DreamersLab
+GitHub - mongolab/hello-<b>mongoose</b>: MongoLab MongoDB <b>...</b>
 === URL ===
-http://dreamerslab.com/blog/en/write-a-todo-list-with-express-and-mongodb/
+https://github.com/mongolab/hello-mongoose
 
-to generate a project bootstrap Add file to project root Add
-express command line tool to generate a project bootstrap Add file to project root Add
-generate a project bootstrap Add file to project root Add
-Add an update action so the todo item can be updated with user input text
+using the repository 's web address
+are often used together because of their shared use of Javascript
+used together because of their shared use of Javascript
+Tasks before filtering: 74Tasks after filtering: 3

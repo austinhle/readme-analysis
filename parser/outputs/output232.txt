@@ -1,0 +1,38 @@
+=== Title ===
+<b>Mongoose</b> Connection best practice
+=== URL ===
+http://theholmesoffice.com/mongoose-connection-best-practice/
+
+to set up a database connection with Mongoose
+set up a database connection with Mongoose
+establishing a Mongoose connection , using the default connection
+thought I 'd clear it up ! There are two ways of establishing a Mongoose connection , using the default connection
+using the default connection
+are two ways of establishing a Mongoose connection , using the default connection
+'ll be looking at using the default connection
+looking at using the default connection
+be looking at using the default connection
+using the default connection
+using the following file structure
+will be the starting point of the application , creating the server
+be the starting point of the application , creating the server
+creating the server
+creating the server
+to require the HTTP module , the db file
+require the HTTP module , the db file
+need to require the HTTP module , the db file
+going to do is require Mongoose , bring the Team model in , create a new team
+do is require Mongoose , bring the Team model in , create a new team
+require Mongoose , bring the Team model in , create a new team
+to do is require Mongoose , bring the Team model in , create a new team
+is require Mongoose , bring the Team model in , create a new team
+'re going to do is require Mongoose , bring the Team model in , create a new team
+create a default Mongoose connection
+see it 's pretty straightforward to create a default Mongoose connection
+can see it 's pretty straightforward to create a default Mongoose connection
+to create a default Mongoose connection
+create a default Mongoose connection
+'s pretty straightforward to create a default Mongoose connection
+can test the disconnection script
+test the disconnection script
+Tasks before filtering: 121Tasks after filtering: 32

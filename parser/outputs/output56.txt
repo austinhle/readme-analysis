@@ -1,10 +1,19 @@
 === Title ===
-Easily Develop <b>Node</b>.<b>js</b> and MongoDB Apps with <b>Mongoose</b> | Scotch
+Object Modeling in <b>Node</b>.<b>js</b> with <b>Mongoose</b> | Heroku Dev Center
 === URL ===
-https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+https://devcenter.heroku.com/articles/nodejs-mongoose
 
-use mongoose
-is the code to add to our Schema to have the date added to if this is the first save , and to on every save
-to have the date added to if this is the first save , and to on every save
-add to our Schema to have the date added to if this is the first save , and to on every save
-to add to our Schema to have the date added to if this is the first save , and to on every save
+are the URL native driver
+is a simple Mongoose schema for a User object
+To instantiate a new user , create a Mongoose model from the schema in the collection
+create a Mongoose model from the schema in the collection
+instantiate a new user , create a Mongoose model from the schema in the collection
+populated with a specific user 's details
+creates databases
+saved to the MongoDB database
+is saved to the MongoDB database
+is the generic form for the query
+are and -LRB- two underscores -RRB-
+is the version key
+is the version key
+Tasks before filtering: 240Tasks after filtering: 13

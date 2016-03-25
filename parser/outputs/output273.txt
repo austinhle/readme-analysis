@@ -1,0 +1,40 @@
+=== Title ===
+An <b>example NodeJS</b> / <b>Mongoose</b> / Express application based on <b>...</b>
+=== URL ===
+https://gist.github.com/1025038
+
+using the repository 's web address
+require -LRB- '
+commented Apr 13 , 2012 < > yea this is a great simple example
+is a great simple example
+yea this is a great simple example
+will install a mongoose generator
+commented Aug 24 , 2012 < > If you want to generate source code like URL , there is site for that : URL URL -LRB- its free -RRB- You will install a mongoose generator
+install a mongoose generator
+commented Jun 6 , 2012 < > thank you ! < > elemenofi < > commented Aug 9 , 2012 < > LOVE ! < > ultra2 < > commented Aug 24 , 2012 < > If you want to generate source code like URL , there is site for that : URL URL -LRB- its free -RRB- You will install a mongoose generator
+commented Aug 9 , 2012 < > LOVE ! < > ultra2 < > commented Aug 24 , 2012 < > If you want to generate source code like URL , there is site for that : URL URL -LRB- its free -RRB- You will install a mongoose generator
+thank you ! < > elemenofi < > commented Aug 9 , 2012 < > LOVE ! < > ultra2 < > commented Aug 24 , 2012 < > If you want to generate source code like URL , there is site for that : URL URL -LRB- its free -RRB- You will install a mongoose generator
+! < > elemenofi < > commented Aug 9 , 2012 < > LOVE ! < > ultra2 < > commented Aug 24 , 2012 < > If you want to generate source code like URL , there is site for that : URL URL -LRB- its free -RRB- You will install a mongoose generator
+is site for that : URL URL -LRB- its free -RRB- You will install a mongoose generator
+need to install mongoose , which is a separate package you can get using npm
+install mongoose , which is a separate package you can get using npm
+to install mongoose , which is a separate package you can get using npm
+is a separate package you can get using npm
+commented Mar 8 , 2013 < > Thanks ! I was wondering how to include it in the project
+was wondering how to include it in the project
+to include it in the project
+wondering how to include it in the project
+include it in the project
+commented Jun 26 , 2013 < > Funny how there are a number of really verbose tutorials out there
+is a concrete example
+are a number of really verbose tutorials out there
+should add tests ? < > crispen-smith < > commented Jun 26 , 2013 < > Funny how there are a number of really verbose tutorials out there
+need is a concrete example
+add tests ? < > crispen-smith < > commented Jun 26 , 2013 < > Funny how there are a number of really verbose tutorials out there
+'m actually building for web presentation rather than an API so there will be differences ,
+building for web presentation rather than an API so there will be differences ,
+'m kind of new to javascript/node , one thing i 'm not clear on are idioms for robust error handling in a node app , any ideas around that you could share would be helpful
+to javascript/node , one thing i 'm not clear on are idioms for robust error handling in a node app , any ideas around that you could share would be helpful
+is a little thin ;-RRB- i 'm kind of new to javascript/node , one thing i 'm not clear on are idioms for robust error handling in a node app , any ideas around that you could share would be helpful
+javascript/node , one thing i 'm not clear on are idioms for robust error handling in a node app , any ideas around that you could share would be helpful
+Tasks before filtering: 232Tasks after filtering: 34

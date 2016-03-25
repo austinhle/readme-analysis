@@ -1,5 +1,49 @@
 === Title ===
-<b>Node</b>.<b>js</b> and MongoDB - Getting Started with <b>Mongoose</b>
+Getting started with MongoDB &amp; <b>Mongoose</b>
 === URL ===
-http://blog.modulus.io/getting-started-with-mongoose
+https://scalegrid.io/blog/getting-started-with-mongodb-and-mongoose/
 
+is an `` elegant mongodb object modeling for URL
+would need to maintain that in your server code , writing validation , making sure nothing irrelevant is stored in a collection
+stored in a collection
+to maintain that in your server code , writing validation , making sure nothing irrelevant is stored in a collection
+maintain that in your server code , writing validation , making sure nothing irrelevant is stored in a collection
+is stored in a collection
+need to maintain that in your server code , writing validation , making sure nothing irrelevant is stored in a collection
+provides a straight-forward , schema-based solution to modeling your application data
+includes built-in type casting , validation , query building , business logic hooks
+provides a straight-forward , schema-based solution to modeling your application data
+to modeling your application data
+modeling your application data
+need to have Node js installed
+to have Node js installed
+have Node js installed
+will install Mongoose as a dependency to our project
+install Mongoose as a dependency to our project
+require the mongoose package to connect to the DB ,
+storing garbage data
+got an understanding of schemas
+try build a user schema using
+can find a list of schema typeshere URL
+find a list of schema typeshere URL
+will create a model from the schema
+create a model from the schema
+insert users into the database
+use this as our base schema to insert users into the database
+will use this as our base schema to insert users into the database
+to insert users into the database
+Lets create a new user instance
+is collection
+to be the same as collection name
+do n't want your model name to be the same as collection name
+want your model name to be the same as collection name
+be the same as collection name
+can also add events to your schemas like pre save
+add events to your schemas like pre save
+is a passionate web developer
+could not insert the data
+insert the data
+` save ' , true , function -LRB- next , done -RRB- -LCB- next -LRB- -RRB- ; doAsync -LRB- done -RRB- ;
+URL -LRB- -LCB- name : URL , email : URL , number : URL , prority : `` low '' -RCB- -RRB- ; URL -LRB- ` save ' , true , function -LRB- next , done -RRB- -LCB- next -LRB- -RRB- ; doAsync -LRB- done -RRB- ; -RCB- -RRB-
+-LCB- name : URL , email : URL , number : URL , prority : `` low '' -RCB- -RRB- ; URL -LRB- ` save ' , true , function -LRB- next , done -RRB- -LCB- next -LRB- -RRB- ; doAsync -LRB- done -RRB- ; -RCB-
+Tasks before filtering: 274Tasks after filtering: 43

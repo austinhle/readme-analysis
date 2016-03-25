@@ -1,5 +1,46 @@
 === Title ===
-<b>Node</b>.<b>js</b> MongoDB <b>Tutorial</b> using <b>Mongoose</b> - YouTube
+Simple example - <b>Node</b>.<b>js</b>, Restify, MongoDb and <b>Mongoose</b> <b>...</b>
 === URL ===
-https://www.youtube.com/watch?v=5e1NEdfs4is
+https://cdnjs.com/libraries/backbone.js/tutorials/nodejs-restify-mongodb-mongoose
 
+saving data -LRB- URL Models -RRB- to MongoDb
+will assist you in saving data -LRB- URL Models -RRB- to MongoDb
+assist you in saving data -LRB- URL Models -RRB- to MongoDb
+saving data -LRB- URL Models -RRB- to MongoDb
+there is a URL example which can be
+is require the Restify module
+require the Restify module
+want to require the MongoDb module
+require the MongoDb module
+require the MongoDb module
+configuration We simply want to require the MongoDb module
+to require the MongoDb module
+set up the example page
+to set up the example page
+used the latest copy of URL URL to set up the example page
+'ve actually used the latest copy of URL URL to set up the example page
+Setting up the client -LRB- URL -RRB- I 've actually used the latest copy of URL URL to set up the example page
+setup a template URL for showing our form that creates new messages
+showing our form that creates new messages
+are ; * views/dashboard/URL * views/guestbook/URL * views/guestbook/URL * models/URL * collections/URL * templates/guestbook / Saving a message First of all we want to setup a template URL for showing our form that creates new messages
+want to setup a template URL for showing our form that creates new messages
+to setup a template URL for showing our form that creates new messages
+require our predefined model for messages
+can see how we require our predefined model for messages
+see how we require our predefined model for messages
+have a collection to use we can setup our views/URL to require the collection
+require the collection
+can setup our views/URL to require the collection
+setup our views/URL to require the collection
+use we can setup our views/URL to require the collection
+to use we can setup our views/URL to require the collection
+to require the collection
+require the collection
+iterate over URL which is an array
+should iterate over URL which is an array
+iterate over URL which is an array
+is an array
+setting a baseUrl in a config file
+using CORS < > Thomas Davis URL / > Lightweight Infinite Scrolling using Twitter API < > Thomas Davis URL / > Simple example - URL , Restify , MongoDb
+> Lightweight Infinite Scrolling using Twitter API < > Thomas Davis URL / > Simple example - URL , Restify , MongoDb
+Tasks before filtering: 236Tasks after filtering: 40

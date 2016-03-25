@@ -1,8 +1,37 @@
 === Title ===
-Simple <b>example</b> - <b>Node</b>.<b>js</b>, Restify, MongoDb and <b>Mongoose</b> <b>...</b>
+Handling data in MEAN.io with <b>Mongoose</b>.js - { 100PercentJS }
 === URL ===
-https://cdnjs.com/libraries/backbone.js/tutorials/nodejs-restify-mongodb-mongoose
+http://www.100percentjs.com/handling-data-in-mean-io-with-mongoose-js-and-angular/
 
-require our predefined model for messages and also our form template
-can see how we require our predefined model for messages and also our form template
-see how we require our predefined model for messages and also our form template
+push the exact same Javascript object from the client to the database without any difficulties
+can push the exact same Javascript object from the client to the database without any difficulties
+lets you quite easily from a node app connect to a Mongo database , model
+store find them in the db
+quite easily from a node app connect to a Mongo database
+is what lets you quite easily from a node app connect to a Mongo database , model
+quite easily from a node app connect to a Mongo database , model
+are mongoose models
+specifies mongodb as the type of database we are using , localhost as the server
+to create the actual model
+create the actual model
+are now ready to create the actual model
+mongoose a model by the name of Article as defined by the ArticleSchema is created
+note that unless set otherwise in the schema , mongoose will use the name of the model as name of the collection in your MongoDB server
+set otherwise in the schema
+is very important to note that unless set otherwise in the schema , mongoose will use the name of the model as name of the collection in your MongoDB server
+will use the name of the model as name of the collection in your MongoDB server
+to note that unless set otherwise in the schema , mongoose will use the name of the model as name of the collection in your MongoDB server
+use the name of the model as name of the collection in your MongoDB server
+will be stored in the articles collection
+stored in the articles collection
+be stored in the articles collection
+return a list of the files in the / app/models folder
+used to return a list of the files in the / app/models folder
+to return a list of the files in the / app/models folder
+is used to return a list of the files in the / app/models folder
+requires them all into the global memory for this app
+finds an article by id
+use the save method to either store
+connects to the database
+connects to the database , defines the models , loads them , creates , reads , update
+Tasks before filtering: 270Tasks after filtering: 31

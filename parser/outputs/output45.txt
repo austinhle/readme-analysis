@@ -1,10 +1,17 @@
 === Title ===
-Easily Develop <b>Node</b>.js and MongoDB Apps with <b>Mongoose</b> | Scotch
+Permission denied error on NPM dependency install · Issue #280 <b>...</b>
 === URL ===
-https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+https://github.com/dokku/dokku/issues/280
 
-use mongoose
-add to our Schema to have the date added to if this is the first save , and to on every save
-is the code to add to our Schema to have the date added to if this is the first save , and to on every save
-to add to our Schema to have the date added to if this is the first save , and to on every save
-to have the date added to if this is the first save , and to on every save
+seeing the following errors occurring : Because it was just on files , this was n't much of a problem
+occurring : Because it was just on files , this was n't much of a problem
+was just on files
+have been seeing the following errors occurring : Because it was just on files , this was n't much of a problem
+been seeing the following errors occurring : Because it was just on files , this was n't much of a problem
+was getting the same user `` undefined '' thing that @neofreko URL creates
+getting the same user `` undefined '' thing that @neofreko URL creates
+putting the files in / tmp /
+using as the owner Several options : * use
+'m basically getting this exact same issue for other npm dependencies
+getting this exact same issue for other npm dependencies
+Tasks before filtering: 215Tasks after filtering: 11

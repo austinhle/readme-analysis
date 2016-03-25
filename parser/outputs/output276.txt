@@ -1,0 +1,17 @@
+=== Title ===
+4RC3 findOneAndUpdate returns not updated <b>doc</b> · Issue #2756 <b>...</b>
+=== URL ===
+https://github.com/Automattic/mongoose/issues/2756
+
+callback result is not updated version of document
+is not updated version of document
+changed the title from 4RC3 findOneAndUpdate to 4RC3 findOneAndUpdate returns not updated doc Mar 11 , 2015 URL < > vkarpov15 < > commented Mar 12 , 2015 < > This is by design
+determines whether it returns the document before
+has a option that determines whether it returns the document before
+returns the document before
+will use false by default because IMO mongoose should n't set conflicting defaults unless there 's a very good reason to
+use false by default because IMO mongoose should n't set conflicting defaults unless there 's a very good reason to
+> Closed PUT returns old document baugarten/node-restful
+returns old document baugarten/node-restful
+'s up there on the migration docs
+Tasks before filtering: 67Tasks after filtering: 11

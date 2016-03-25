@@ -1,9 +1,19 @@
 === Title ===
-<b>Mongoose</b> - <b>Node</b>.<b>js</b> + MongoDB with <b>Mongoose</b> Tutorial
+GitHub - baugarten/<b>node</b>-<b>restful</b>: A library for quickly providing a <b>...</b>
 === URL ===
-http://www.javabeat.net/mongoose-nodejs-mongodb/
+https://github.com/baugarten/node-restful
 
-taken from the Mongoose API Home page -RRB- To use mongoose
-To use mongoose
-use mongoose
-download the Node package for mongoose API using the following command
+using the repository 's web address
+is that returns a Mongoose model
+returns a Mongoose model
+is a good example application under examples/movies
+< > Install < > Usage There is a good example application under examples/movies
+to set up routes , etc
+set up routes , etc
+implementing pagination you might want to use
+skipping items When implementing pagination you might want to use
+returns all users older than 18 greater than
+return all male users not equal returns all users who are not male
+returns all users who are not male
+returns all users with age other than 18
+Tasks before filtering: 295Tasks after filtering: 13

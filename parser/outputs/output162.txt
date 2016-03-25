@@ -1,0 +1,75 @@
+=== Title ===
+Build a <b>RESTful API</b> Using <b>Node</b> and Express 4 | Scotch
+=== URL ===
+https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+
+Use the proper HTTP verbs to make it RESTful -LRB- , , , and -RRB- * Return JSON data * Log all requests to the console All of this is pretty standard for RESTful APIs URL
+make it RESTful -LRB- , , , and -RRB- * Return JSON data * Log all requests to the console All of this is pretty standard for RESTful APIs URL
+RESTful -LRB- , , , and -RRB- * Return JSON data * Log all requests to the console All of this is pretty standard for RESTful APIs URL
+to make it RESTful -LRB- , , , and -RRB- * Return JSON data * Log all requests to the console All of this is pretty standard for RESTful APIs URL
+Getting Started Let 's look at all the files we will need to create our API
+need to define our Node packages , start our server using Express , define our model , declare our routes using Express ,
+start our server using Express
+will need to define our Node packages , start our server using Express , define our model , declare our routes using Express ,
+to define our Node packages , start our server using Express , define our model , declare our routes using Express ,
+declare our routes using Express ,
+define our Node packages , start our server using Express , define our model , declare our routes using Express ,
+is our file structure
+create that file with these packages
+pull in all the packages we pulled in using npm
+then send a request to the one route we defined to make sure we get a response
+create a server
+will create a server
+want to get data
+to get data
+is what we want since we just want to get data
+get data
+want since we just want to get data
+create a MongoDB database
+is create a MongoDB database
+create a MongoDB database
+create your own database
+create your own database
+can definitely create your own database
+have your database created
+have your database created
+connect to our remote database hosted by Modulus
+create a model
+be the focus of this tutorial
+create a model
+'ll just create a model
+app/models/URL Since the model wo n't be the focus of this tutorial , we 'll just create a model
+wo n't be the focus of this tutorial
+use our data
+help the people using our API to use our data
+using our API to use our data
+will help the people using our API to use our data
+to use our data
+do validations to make sure that everything coming from a request is safe
+can do validations to make sure that everything coming from a request is safe
+can throw errors here in case something is wrong
+throw errors here in case something is wrong
+'s just log something to the console with our middleware
+will now create the routes to handle getting all the bears
+Creating the Basic Routes We will now create the routes to handle getting all the bears
+Creating the Basic Routes We will now create the routes to handle getting all the bears
+create the routes to handle getting all the bears
+handled using the route
+will both be handled using the route
+be handled using the route
+using the route
+have created the route for our application
+created the route for our application
+GET / api/bears This will be a simple route that we will add onto the we created for the POST
+will be a simple route that we will add onto the we created for the POST
+Getting All Bears GET / api/bears This will be a simple route that we will add onto the we created for the POST
+be a simple route that we will add onto the we created for the POST
+are able to chain together the different routes
+to and we 'll get all the bears back in JSON format
+and we 'll get all the bears back in JSON format
+'ll get all the bears back in JSON format
+Just send a request to and we 'll get all the bears back in JSON format
+get all the bears back in JSON format
+save him back to the database
+create better error messages
+Tasks before filtering: 670Tasks after filtering: 69

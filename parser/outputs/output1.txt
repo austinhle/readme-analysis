@@ -1,10 +1,31 @@
 === Title ===
-codetunnel/<b>mongoose</b>-<b>auto</b>-<b>increment</b>
+Write a todo list with Express and MongoDB | DreamersLab
 === URL ===
-https://github.com/codetunnel/mongoose-auto-increment/issues/40
+http://dreamerslab.com/blog/en/write-a-todo-list-with-express-and-mongodb/
 
-npm ERR ! argv `` node '' '' / usr/local/bin / npm '' `` install '' `` mongoose-auto-increment '' ''
-npm ERR ! argv `` node '' '' / usr/local/bin / npm '' `` install '' `` mongoose-auto-increment '' '' -- save '' npm ERR ! node URL
-to use the latest mongoose
-'ve to use the latest mongoose
-use the latest mongoose
+updated the example code on Github
+defines database schema when using a schema-less database ?
+using a schema-less database
+need a ORM that defines database schema when using a schema-less database ?
+Using express command line tool to generate a project bootstrap Add file to project root Add
+Steps Using express command line tool to generate a project bootstrap Add file to project root Add
+express command line tool to generate a project bootstrap Add file to project root Add
+to generate a project bootstrap Add file to project root Add
+generate a project bootstrap Add file to project root Add
+Redirect the page back to index after the record is created
+create action to routes
+Add this create action to routes
+updated with user input text
+Add an update action so the todo item can be updated with user input text
+can be updated with user input text
+be updated with user input text
+are going to use cookie to store different user information so that ever user gets his own todo list
+to store different user information so that ever user gets his own todo list
+use cookie to store different user information so that ever user gets his own todo list
+store different user information so that ever user gets his own todo list
+get the same result when visiting this site , we are going to use cookie to store different user information so that ever user gets his own todo list
+to use cookie to store different user information so that ever user gets his own todo list
+going to use cookie to store different user information so that ever user gets his own todo list
+get the current user id
+to get the current user id
+Tasks before filtering: 189Tasks after filtering: 25

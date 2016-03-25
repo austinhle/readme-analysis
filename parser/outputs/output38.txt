@@ -1,10 +1,7 @@
 === Title ===
-Easily Develop <b>Node</b>.js and MongoDB Apps with <b>Mongoose</b> | Scotch
+Querying MongoDB from <b>Express</b> using <b>Mongoose</b> for <b>Node</b>.js Code <b>...</b>
 === URL ===
-https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+http://runnable.com/U0MpcpIzdaRkX2VH/querying-mongodb-from-express-using-mongoose-for-node-js
 
-use mongoose
-add to our Schema to have the date added to if this is the first save , and to on every save
-to add to our Schema to have the date added to if this is the first save , and to on every save
-to have the date added to if this is the first save , and to on every save
-is the code to add to our Schema to have the date added to if this is the first save , and to on every save
+using express
+Tasks before filtering: 35Tasks after filtering: 1

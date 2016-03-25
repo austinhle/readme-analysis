@@ -1,19 +1,20 @@
 === Title ===
-Creating RESTful APIs With NodeJS and MongoDB Tutorial (Part II <b>...</b>
+GitHub - madhums/<b>node</b>-<b>express</b>-<b>mongoose</b>-demo: A simple demo <b>...</b>
 === URL ===
-http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb
+https://github.com/madhums/node-express-mongoose-demo
 
-Welcome to this RESTful API using URL -LRB- URL -RRB- and MongoDB -LRB- mongoose -RRB- tutorial
-using URL -LRB- URL -RRB- and MongoDB -LRB- mongoose -RRB- tutorial
-, , , ... Here 's is a summary what we want to implement : Resource -LRB- URI -RRB- POST -LRB- create -RRB- GET -LRB- read -RRB- PUT -LRB- update -RRB- DELETE -LRB- destroy -RRB- / todos create new task list tasks N/A -LRB- update all -RRB- N/A
-, , ... Here 's is a summary what we want to implement : Resource -LRB- URI -RRB- POST -LRB- create -RRB- GET -LRB- read -RRB- PUT -LRB- update -RRB- DELETE -LRB- destroy -RRB- / todos create new task list tasks N/A -LRB- update all -RRB- N/A
-to require mongoose in the
-require mongoose in the
-need to require mongoose in the
-going to add the ability to create using mongoose
-to add the ability to create using mongoose
-to create using mongoose
-are going to add the ability to create using mongoose
-using mongoose
-add the ability to create using mongoose
-create using mongoose
+using the repository 's web address
+used in everyday web development , with a fine touch of best practices
+signing up using facebook , twitter , github
+is a blog application where users -LRB- signing up using facebook , twitter , github
+using facebook , twitter , github
+use the boilerplate app
+URL * mongodb URL * imagemagick URL < > Install NOTE : Do not forget to set the facebook , twitter , google , linkedin
+do n't forget to set env variables for the imager config
+to use image uploads
+forget to set env variables for the imager config
+use image uploads
+to set env variables for the imager config
+set env variables for the imager config
+want to use image uploads
+Tasks before filtering: 129Tasks after filtering: 14

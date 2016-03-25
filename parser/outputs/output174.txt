@@ -1,0 +1,38 @@
+=== Title ===
+<b>node</b>.js and mongo (using <b>mongoose</b>) tutorial - ps: it&#39;s mike
+=== URL ===
+http://psitsmike.com/2012/02/node-js-and-mongo-using-mongoose-tutorial/
+
+using mongoose
+to be easily scalable horizontally , unlike SQL databases
+said to be easily scalable horizontally , unlike SQL databases
+is said to be easily scalable horizontally , unlike SQL databases
+be easily scalable horizontally , unlike SQL databases
+> The mongoDB schema is dynamic
+is an array
+To save/insert data to a schema , we use the
+save/insert data to a schema , we use the
+save it to the database
+can save it to the database
+can be a json object such as
+find -LRB- -RRB- can be a json object such as
+be a json object such as
+see if there are actually any users with this username
+first check to see if there are actually any users with this username
+to see if there are actually any users with this username
+update a document within a collection , I chose to first check to see if there are actually any users with this username
+chose to first check to see if there are actually any users with this username
+are actually any users with this username
+to update a document within a collection , I chose to first check to see if there are actually any users with this username
+to first check to see if there are actually any users with this username
+use the callback parameter
+putting the code on github
+like below query var first ; URL -LRB- room , function -LRB- error , count -RRB- -LCB- return first ; -RCB- -RRB- ; URL -LRB- first -RRB- ; * michael mukhin -- April 25 , 2012 @ 8:35 am URL
+first ; URL -LRB- room , function -LRB- error , count -RRB- -LCB- return first ; -RCB- -RRB- ; URL -LRB- first -RRB- ; * michael mukhin -- April 25 , 2012 @ 8:35 am URL
+is to check the error by adding to your model : URL -LRB- ` save ' , function -LRB- err , data -RRB- -LCB- / / check error there before saving -RCB- -RRB-
+check the error by adding to your model : URL -LRB- ` save ' , function -LRB- err , data -RRB- -LCB- / / check error there before saving -RCB- -RRB-
+adding to your model : URL -LRB- ` save ' , function -LRB- err , data -RRB- -LCB- / / check error there before saving -RCB- -RRB-
+to check the error by adding to your model : URL -LRB- ` save ' , function -LRB- err , data -RRB- -LCB- / / check error there before saving -RCB- -RRB-
+` save ' , function -LRB- err , data -RRB- -LCB- / / check error there before saving -RCB-
+using mongoose
+Tasks before filtering: 229Tasks after filtering: 32

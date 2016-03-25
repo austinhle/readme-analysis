@@ -1,0 +1,55 @@
+=== Title ===
+<b>MongoDB</b> example driver tips &amp; tricks: <b>Node</b>.js <b>Mongoose</b> ODM
+=== URL ===
+http://blog.mlab.com/2014/04/mongodb-driver-mongoose/
+
+configure use particular MongoDB drivers
+> * Increase connection timeouts to mitigate errors < > * New connections require the write lock ; be careful with index builds < > * Properly configure application error handling < > * You 're all set !
+mitigate errors < > * New connections require the write lock ; be careful with index builds < > * Properly configure application error handling < > * You 're all set
+requires a different connection string
+to mitigate errors < > * New connections require the write lock ; be careful with index builds < > * Properly configure application error handling < > * You 're all set
+Increase connection timeouts to mitigate errors < > * New connections require the write lock ; be careful with index builds < > * Properly configure application error handling < > * You 're all set
+require the write lock ; be careful with index builds < > * Properly configure application error handling < > * You 're all set
+gives them the ability to define a schema for their documents which can then be used to map documents to objects in their programming language
+use ODMs like Mongoose is that it gives them the ability to define a schema for their documents which can then be used to map documents to objects in their programming language
+to define a schema for their documents which can then be used to map documents to objects in their programming language
+used to map documents to objects in their programming language
+is that it gives them the ability to define a schema for their documents which can then be used to map documents to objects in their programming language
+can then be used to map documents to objects in their programming language
+define a schema for their documents which can then be used to map documents to objects in their programming language
+be used to map documents to objects in their programming language
+uses them to query
+cover this native driver in a future installment of this blog series
+will cover this native driver in a future installment of this blog series
+find a straightforward example URL on connecting , inserting , updating
+can find a straightforward example URL on connecting , inserting , updating
+see that users have problems connecting to MongoLab using the Mongoose driver
+using the Mongoose driver
+connecting to MongoLab using the Mongoose driver
+have problems connecting to MongoLab using the Mongoose driver
+is almost always incorrect configuration of the driver , particularly around timeouts
+using the MongoLab-recommended driver options
+is a connection example using the MongoLab-recommended driver options
+is included with the first node
+included with the first node
+see with the Mongoose driver is Mongo Connection error
+is Mongo Connection error
+found in set
+created by the driver -LRB- server
+being created by the driver -LRB- server
+require the write lock ; be careful with index builds Update -LRB- 5/21/14 10:34 AM -RRB-
+be careful with index builds Update -LRB- 5/21/14 10:34 AM -RRB-
+authenticate on all the replica set nodes
+set nodes
+wait until the index build is complete
+must wait until the index build is complete
+remember that most errors are returned through callbacks
+are returned through callbacks
+returned through callbacks
+to remember that most errors are returned through callbacks
+'s important to remember that most errors are returned through callbacks
+passing them to a centralized framework by using the URL `` next URL '' callback convention
+can consider passing them to a centralized framework by using the URL `` next URL '' callback convention
+consider passing them to a centralized framework by using the URL `` next URL '' callback convention
+using the URL `` next URL '' callback convention
+Tasks before filtering: 240Tasks after filtering: 49

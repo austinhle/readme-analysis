@@ -63,14 +63,16 @@ public class MyParser {
 
   // Stanford NLP parser variables
   private final static String PCG_MODEL = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz";
-  private final TokenizerFactory<CoreLabel> tokenizerFactory = PTBTokenizer.factory(new CoreLabelTokenFactory(), "invertible=true");
-  private final LexicalizedParser parser = LexicalizedParser.loadModel(PCG_MODEL);
+  private final static TokenizerFactory<CoreLabel> tokenizerFactory = PTBTokenizer.factory(new CoreLabelTokenFactory(), "invertible=true");
+  private final static LexicalizedParser parser = LexicalizedParser.loadModel(PCG_MODEL);
 
   private static String user = "";
   private static String password = "";
 
+  private static Set<String> lemmatizedQueryWords = new HashSet<String>();
+
   public static void main(String[] args) {
-    System.out.println("Starting extraction of tasks.");
+    System.out.println("Starting main...");
 
     MyParser mp = new MyParser();
 
@@ -98,11 +100,31 @@ public class MyParser {
     try {
       System.out.println("Attempting to connect to database...");
       Connection db = DriverManager.getConnection(DB_URL, user, password);
-
       System.out.println("Successfully connected to database.");
 
       Statement st = db.createStatement();
-      ResultSet rs = st.executeQuery("SELECT title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id ORDER BY title DESC");
+      ResultSet rs = st.executeQuery("SELECT query FROM query WHERE fetch_index = 14 AND query LIKE '%mongoose%' GROUP BY query");
+      System.out.println("Retrieved queries for task filtering.");
+
+      while (rs.next()) {
+        String query = rs.getString(1);
+        Tree queryTree = parse(query);
+        List<Tree> queryPreorder = queryTree.preOrderNodeList();
+
+        for (Tree t : queryPreorder) {
+          if (t.isLeaf()) {
+            String word = t.label().value().toString();
+            String wordLabel = t.parent(queryTree).label().value().toString();
+            lemmatizedQueryWords.add(Morphology.lemmaStatic(word, wordLabel, false));
+          }
+        }
+      }
+
+      System.out.println("Created set of lemmatized query words for task filtering.");
+
+      st = db.createStatement();
+      rs = st.executeQuery("SELECT title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id ORDER BY title DESC");
+      System.out.println("Retrieved search result content to perform task extraction on.");
 
       int outIndex = 0;
 
@@ -112,12 +134,10 @@ public class MyParser {
         url = rs.getString(3);
         content = rs.getString(4);
 
-        System.out.println("Title: " + title);
-        System.out.println("Snippet: " + rs.getString(2));
-        System.out.println("URL: " + url);
-        System.out.println("Content length: " + content.length());
-
         try {
+          System.out.println("Title: " + title);
+          System.out.println("URL: " + url);
+
           mp.extractTasks(title, url, content, outIndex);
         } catch (IOException e) {
           System.err.println(e);
@@ -168,7 +188,7 @@ public class MyParser {
 
     System.out.println(String.format("=== Extracting content #%d ===", outIndex));
 
-    File file = new File(String.format("output/output%d.txt", outIndex));
+    File file = new File(String.format("outputs/output%d.txt", outIndex));
     BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 
     bw.write("=== Title ===\n");
@@ -194,7 +214,6 @@ public class MyParser {
 
       Set<Task> tasks = new HashSet<Task>();
       findTasksFromTree(tree, tree, tasks);
-
       numTasksTotal += tasks.size();
 
       filterTasksByQueries(tasks);
@@ -214,6 +233,9 @@ public class MyParser {
     for (String kt : keptTasks) {
       System.out.println(kt);
     }
+    System.out.print("\n\n");
+
+    // TODO: Output data to PostgreSQL database.
 
     bw.close();
   }
@@ -234,41 +256,49 @@ public class MyParser {
         StringJoiner lemmatizedTaskString = new StringJoiner(" ");
         String lemmatizedVerb = "";
 
-        Set<String> nouns = new HashSet<String>();
+        Set<String> lemmatizedNouns = new HashSet<String>();
 
         int numWords = 0;
         for (Tree preTree : preorder) {
           if (preTree.isLeaf()) { // This node represents an actual word in the sentence.
-            Tree parent = preTree.parent(root);
             String word = preTree.label().value().toString();
-            taskString.add(word);
+            String wordLabel = preTree.parent(root).label().value().toString();
+            if (wordLabel.equals("PP") || wordLabel.equals("CC") || wordLabel.equals("VP")) {
+              // Use PP and CC parts of speech (prep phrase and conjunction) as delimiters.
+              if (numWords > 1) {
+                // System.out.println("Task found: " + taskString.toString());
+                // System.out.println("Lemmatized task found: " + lemmatizedTaskString.toString());
+                tasks.add(new Task(taskString.toString(), lemmatizedTaskString.toString(), lemmatizedVerb, lemmatizedNouns));
 
-            // This word is a verb and should be lemmatized.
-            String parentLabel = parent.label().value().toString();
-            if (verbPOSList.contains(parentLabel)) {
-              word = Morphology.lemmaStatic(word, parentLabel, false);
-              lemmatizedVerb = word;
+                // Recursively check children.
+                Tree[] children = t.children();
+                for (Tree child : children) {
+                  findTasksFromTree(root, child, tasks);
+                }
+                return;
+              }
+            } else {
+              numWords++;
+
+              // Add word to task string before we potentially lemmatize it.
+              taskString.add(word);
+
+              if (verbPOSList.contains(wordLabel)) {
+                word = Morphology.lemmaStatic(word, wordLabel, false);
+                lemmatizedVerb = word;
+              } else if (nounPOSList.contains(wordLabel)) {
+                word = Morphology.lemmaStatic(word, wordLabel, false);
+                lemmatizedNouns.add(word);
+              }
+
+              lemmatizedTaskString.add(word);
             }
-            lemmatizedTaskString.add(word);
-
-            // This word is a noun and should be noted for later task filtering.
-            if (nounPOSList.contains(parentLabel)) {
-              nouns.add(word);
-            }
-
-            numWords++;
           }
         }
 
-        if (numWords > 1) {
-          // System.out.println("Task found: " + taskString.toString());
-          // System.out.println("Lemmatized task found: " + lemmatizedTaskString.toString());
-          tasks.add(new Task(taskString.toString(), lemmatizedTaskString.toString(), lemmatizedVerb, nouns));
-        }
+        tasks.add(new Task(taskString.toString(), lemmatizedTaskString.toString(), lemmatizedVerb, lemmatizedNouns));
       }
-
-      // Recursively check children regardless of whether or not we found a verb phrase
-      // at this node.
+      // Recursively check children.
       Tree[] children = t.children();
       for (Tree child : children) {
         findTasksFromTree(root, child, tasks);
@@ -277,65 +307,37 @@ public class MyParser {
   }
 
   private void filterTasksByQueries(Set<Task> tasks) {
-    try {
-      Connection db = DriverManager.getConnection(DB_URL, user, password);
-      Statement st = db.createStatement();
-      ResultSet rs = st.executeQuery("SELECT query FROM query WHERE fetch_index = 14 AND query LIKE '%mongoose%' GROUP BY query");
+    Map<Task, Boolean> toRemove = new HashMap<Task, Boolean>();
 
-      String query = "";
-
-      Map<Task, Boolean> toRemove = new HashMap<Task, Boolean>();
-      for (Task task : tasks) {
+    for (Task task : tasks) {
+      if (taskSimilarToSomeQuery(task)) {
+        toRemove.put(task, false);
+      } else {
         toRemove.put(task, true);
       }
+    }
 
-      while (rs.next())
-      {
-        query = rs.getString(1);
-        for (Task task : tasks) {
-          if (querySimilarToTask(query, task)) {
-            toRemove.put(task, false);
-          }
-        }
+    for (Task task : toRemove.keySet()) {
+      if (toRemove.get(task)) {
+        tasks.remove(task);
       }
-      rs.close();
-      st.close();
-
-      for (Task task : toRemove.keySet()) {
-        if (toRemove.get(task)) {
-          tasks.remove(task);
-        }
-      }
-    } catch (SQLException e) {
-      System.err.println(e);
     }
   }
 
-  private boolean querySimilarToTask(String query, Task task) {
+  private boolean taskSimilarToSomeQuery(Task task) {
     String lemmatizedTaskVerb = task.lemmatizedVerb;
-    Set<String> nouns = task.nouns;
+    Set<String> lemmatizedNouns = task.lemmatizedNouns;
 
-    Tree queryTree = parse(query);
-    List<Tree> preorder = queryTree.preOrderNodeList();
-    Set<String> lemmatizedQueryWords = new HashSet<String>();
-
-    for (Tree t : preorder) {
-      if (t.isLeaf()) {
-        Tree parent = t.parent(queryTree);
-        String word = t.label().value().toString();
-
-        String parentLabel = parent.label().value().toString();
-        lemmatizedQueryWords.add(Morphology.lemmaStatic(word, parentLabel, false));
-      }
-    }
-
+    // The task's verb must appear in at least one of the queries.
     if (!lemmatizedQueryWords.contains(lemmatizedTaskVerb)) {
       return false;
     }
 
-    for (String n : nouns) {
-      if (lemmatizedQueryWords.contains(n)) {
-        System.out.println("--- Found a verb and noun match!");
+    // In addition, at least one of the nouns in the task must appear in at least one of
+    // the queries.
+    for (String noun : lemmatizedNouns) {
+      if (lemmatizedQueryWords.contains(noun)) {
+        System.out.println("--- Found a task!");
         return true;
       }
     }
@@ -343,13 +345,13 @@ public class MyParser {
     return false;
   }
 
-  public Tree parse(String str) {
+  public static Tree parse(String str) {
     List<CoreLabel> tokens = tokenize(str);
     Tree tree = parser.apply(tokens);
     return tree;
   }
 
-  private List<CoreLabel> tokenize(String str) {
+  private static List<CoreLabel> tokenize(String str) {
     Tokenizer<CoreLabel> tokenizer = tokenizerFactory.getTokenizer(new StringReader(str));
     return tokenizer.tokenize();
   }
@@ -358,13 +360,13 @@ public class MyParser {
     public String taskString;
     public String lemmatizedTaskString;
     public String lemmatizedVerb;
-    public Set<String> nouns;
+    public Set<String> lemmatizedNouns;
 
-    public Task(String taskString, String lemmatizedTaskString, String lemmatizedVerb, Set<String> nouns) {
+    public Task(String taskString, String lemmatizedTaskString, String lemmatizedVerb, Set<String> lemmatizedNouns) {
       this.taskString = taskString;
       this.lemmatizedTaskString = lemmatizedTaskString;
       this.lemmatizedVerb = lemmatizedVerb;
-      this.nouns = nouns;
+      this.lemmatizedNouns = lemmatizedNouns;
     }
   }
 }

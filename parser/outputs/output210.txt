@@ -1,0 +1,20 @@
+=== Title ===
+<b>Mongoose</b> SchemaTypes v4.4.7
+=== URL ===
+http://mongoosejs.com/docs/schematypes.html
+
+URL arenot hooked into URL the mongoose change tracking logic which in English means that if you use a in your document
+use a in your document
+use a in your document
+URL the mongoose change tracking logic which in English means that if you use a in your document
+means that if you use a in your document
+URL arenot hooked into URL the mongoose change tracking logic which in English means that if you use a in your document
+hooked into URL the mongoose change tracking logic which in English means that if you use a in your document
+using built-in methods
+must modify types using built-in methods
+modify types using built-in methods
+is a schema-less type
+Note : specifying an empty array is equivalent to
+specifying an empty array is equivalent to
+create arrays of
+Tasks before filtering: 77Tasks after filtering: 14

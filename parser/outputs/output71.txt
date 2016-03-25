@@ -1,11 +1,36 @@
 === Title ===
-4RC3 findOneAndUpdate returns not updated <b>doc</b> · Issue #2756 <b>...</b>
+Inserting and updating — <b>MongoDB Node</b>.JS Driver 1.4.9 <b>...</b>
 === URL ===
-https://github.com/Automattic/mongoose/issues/2756
+https://mongodb.github.io/node-mongodb-native/markdown-docs/insert.html
 
-callback result is not updated version of document
-updates , but callback result is not updated version of document
-is not updated version of document
-works incorrectly -LRB- it updates , but callback result is not updated version of document -RRB-
-use false by default because IMO mongoose should n't set conflicting defaults unless there 's a very good reason to
-will use false by default because IMO mongoose should n't set conflicting defaults unless there 's a very good reason to
+inserted to a collection with insert
+be inserted to a collection with insert
+can be inserted to a collection with insert
+is a single document object
+callback - callback function to run after the record is inserted
+to find records that need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+is the callback to be run after the records are updated
+is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+is a query object to find records that need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+find records that need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+¶ < > There are several option values that can be used with an update
+be used with an update
+are several option values that can be used with an update
+can be used with an update
+used with an update
+returns updated document as bson binary Buffer
+object ¶ < > If the replacement object is a document , the matching documents will be replaced -LRB- except the_id values if no _ id is set -RRB-
+is a document
+records that match the query object , default is false -LRB- only the first one found is updated -RRB- * upsert - if true
+is false -LRB- only the first one found is updated -RRB- * upsert - if true
+To update only selected fields , $ set operator needs to be used
+update only selected fields , $ set operator needs to be used
+to find the record * sort indicates the order of the matches if there 's more than one matching record
+is the query object to find the record * sort indicates the order of the matches if there 's more than one matching record
+find the record * sort indicates the order of the matches if there 's more than one matching record
+removes the record from the collection
+Tasks before filtering: 147Tasks after filtering: 30

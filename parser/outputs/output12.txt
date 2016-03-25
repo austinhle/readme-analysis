@@ -1,8 +1,7 @@
 === Title ===
-An <b>example NodeJS</b> / <b>Mongoose</b> / <b>Express</b> application based on <b>...</b>
+The <b>Node</b>.JS <b>MongoDB</b> Driver Manual
 === URL ===
-https://gist.github.com/1025038
+http://mongodb.github.io/node-mongodb-native/1.4/
 
-install mongoose , which is a separate package you can get using npm
-need to install mongoose , which is a separate package you can get using npm
-to install mongoose , which is a separate package you can get using npm
+> * MongoClient connection pooling < >
+Tasks before filtering: 38Tasks after filtering: 1

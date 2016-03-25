@@ -1,0 +1,20 @@
+=== Title ===
+codetunnel/<b>mongoose</b>-<b>auto</b>-<b>increment</b>
+=== URL ===
+https://github.com/codetunnel/mongoose-auto-increment/issues/40
+
+npm ERR ! argv `` node '' '' / usr/local/bin / npm '' `` install '' `` mongoose-auto-increment '' '' -- save '' npm ERR ! node URL
+npm ERR ! argv `` node '' '' / usr/local/bin / npm '' `` install '' `` mongoose-auto-increment '' ''
+to use the latest mongoose
+use the latest mongoose
+'ve to use the latest mongoose
+'ve to use the latest mongoose
+worked removing line with mongoose from dependencies object in my URL file
+removing line with mongoose from dependencies object in my URL file
+installed as a dependency of mongoose-auto-increment
+was automatically installed as a dependency of mongoose-auto-increment
+update this package 's dependency
+Please update this package 's dependency
+Please update this package 's dependency
+update this package 's dependency
+Tasks before filtering: 129Tasks after filtering: 14

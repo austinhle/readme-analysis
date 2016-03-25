@@ -1,5 +1,9 @@
 === Title ===
-GitHub - mongolab/hello-<b>mongoose</b>: MongoLab MongoDB <b>...</b>
+Modeling <b>inheritance</b> in <b>Mongoose</b> – Michiel Staessen Blog
 === URL ===
-https://github.com/mongolab/hello-mongoose
+http://blog.mstaessen.be/2013/07/29/modeling-inheritance-in-mongoose/
 
+stored in a single collection because a collection-per-eventType approach is clearly not recommendable here
+are stored in a single collection because a collection-per-eventType approach is clearly not recommendable here
+is a discriminator field inside of each event document
+Tasks before filtering: 74Tasks after filtering: 3

@@ -1,16 +1,19 @@
 === Title ===
-Getting Started with <b>Mongoose</b> and <b>Node</b>.js – A <b>Sample</b> Comments <b>...</b>
+Object Modeling in <b>Node</b>.js with <b>Mongoose</b> | Heroku Dev Center
 === URL ===
-http://blog.ijasoneverett.com/2013/11/getting-started-with-mongoose-and-node-js-a-sample-comments-system/
+https://devcenter.heroku.com/articles/nodejs-mongoose
 
-to download and install the nodejs client for mongoose
-download and install the nodejs client for mongoose
-have saved the file run the following code to download and install the nodejs client for mongoose
-saved the file run the following code to download and install the nodejs client for mongoose
-include mongoose
-is include mongoose and get a reference to schema
-include mongoose and get a reference to schema
-do is require mongoose and the Comment model before we can use it
-Open and add the following code : The first thing we do is require mongoose and the Comment model before we can use it
-require mongoose and the Comment model before we can use it
-is require mongoose and the Comment model before we can use it
+are the URL native driver
+is a simple Mongoose schema for a User object
+create a Mongoose model from the schema in the collection
+instantiate a new user , create a Mongoose model from the schema in the collection
+To instantiate a new user , create a Mongoose model from the schema in the collection
+populated with a specific user 's details
+creates databases
+is saved to the MongoDB database
+saved to the MongoDB database
+is the generic form for the query
+are and -LRB- two underscores -RRB-
+is the version key
+is the version key
+Tasks before filtering: 240Tasks after filtering: 13

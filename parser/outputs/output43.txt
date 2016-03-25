@@ -1,6 +1,7 @@
 === Title ===
-<b>Node</b>.js, <b>Express</b> and <b>Mongoose</b> tutorial
+Querying MongoDB from <b>Express</b> using <b>Mongoose</b> for <b>Node</b>.<b>js</b> Code <b>...</b>
 === URL ===
-http://theholmesoffice.com/node-js-express-and-mongoose/
+http://runnable.com/U0MpcpIzdaRkX2VH/querying-mongodb-from-express-using-mongoose-for-node-js
 
-taking that , bringing in the model as a local variable and requiring Mongoose
+using express
+Tasks before filtering: 35Tasks after filtering: 1

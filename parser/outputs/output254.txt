@@ -1,0 +1,36 @@
+=== Title ===
+<b>Inserting</b> and updating — MongoDB <b>Node</b>.<b>JS</b> Driver 1.4.9 <b>...</b>
+=== URL ===
+https://mongodb.github.io/node-mongodb-native/markdown-docs/insert.html
+
+can be inserted to a collection with insert
+be inserted to a collection with insert
+inserted to a collection with insert
+is a single document object
+callback - callback function to run after the record is inserted
+is a query object to find records that need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+find records that need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+is the callback to be run after the records are updated
+to find records that need to be updated -LRB- see Queries < > -RRB- * update is the replacement object * options is an options object -LRB- see below -RRB- * callback is the callback to be run after the records are updated
+are several option values that can be used with an update
+¶ < > There are several option values that can be used with an update
+used with an update
+can be used with an update
+be used with an update
+is a document
+is false -LRB- only the first one found is updated -RRB- * upsert - if true
+returns updated document as bson binary Buffer
+records that match the query object , default is false -LRB- only the first one found is updated -RRB- * upsert - if true
+object ¶ < > If the replacement object is a document , the matching documents will be replaced -LRB- except the_id values if no _ id is set -RRB-
+To update only selected fields , $ set operator needs to be used
+update only selected fields , $ set operator needs to be used
+is the query object to find the record * sort indicates the order of the matches if there 's more than one matching record
+find the record * sort indicates the order of the matches if there 's more than one matching record
+to find the record * sort indicates the order of the matches if there 's more than one matching record
+removes the record from the collection
+Tasks before filtering: 147Tasks after filtering: 30

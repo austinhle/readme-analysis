@@ -1,5 +1,37 @@
 === Title ===
-<b>Node</b>.<b>js</b> MongoDB <b>Tutorial</b> using <b>Mongoose</b> - YouTube
+How to build a scalable <b>REST API</b> using <b>Node</b>.JS and Express <b>...</b>
 === URL ===
-https://www.youtube.com/watch?v=5e1NEdfs4is
+http://shamadeh.com/blog/web/2014/06/26/NodeRestAPITutorial.html
 
+include all the other library items
+to include all the other library items
+scaling it to include all the other library items
+should response with the hardcoded data when you try to get a book
+response with the hardcoded data when you try to get a book
+echo back the data when you try to do another operation , such as inserting , deleting ,
+should echo back the data when you try to do another operation , such as inserting , deleting ,
+can use real data in our API
+use real data in our API
+stored on a database server , in a file ,
+can be stored on a database server , in a file ,
+be stored on a database server , in a file ,
+start by using MongoDB to store my data
+using MongoDB to store my data
+store my data
+to store my data
+to start by using MongoDB to store my data
+like to start by using MongoDB to store my data
+use an NPM package calledMongoose URL / >
+will use an NPM package calledMongoose URL / >
+start using real data in your API
+Setting up the Database Before you start using real data in your API , you need to install MongoDB
+using real data in your API
+connect Mongoose to our database
+to connect Mongoose to our database
+need to connect Mongoose to our database
+use the connect method to connect it to our local -LRB-
+Note that the url points to the database inside MongoDB -LRB- in this case it is library_database -RRB-
+points to the database inside MongoDB -LRB- in this case it is library_database -RRB-
+is used for data validation
+used for data validation
+Tasks before filtering: 264Tasks after filtering: 31

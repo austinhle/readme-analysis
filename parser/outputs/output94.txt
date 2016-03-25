@@ -1,5 +1,17 @@
 === Title ===
-<b>Node</b>.<b>js</b> and MongoDB - Getting Started with <b>Mongoose</b>
+GitHub - madhums/<b>node</b>-<b>express</b>-<b>mongoose</b>: A boilerplate <b>...</b>
 === URL ===
-http://blog.modulus.io/getting-started-with-mongoose
+https://github.com/madhums/node-express-mongoose
 
+Skip to content < > URL / > Personal < > Open source < > Business < > Explore < > Sign up < > Sign in < > Pricing < > Blog < > Support URL * Watch < > 39 < > * Star < > 534 < > * Fork < > 164 < > madhums < > / node-express-mongoose < > Code < > Issues 0 < > Pull requests 1 < > Wiki < > Pulse < > Graphs < > A boilerplate application for building web apps using express , mongoose
+content < > URL / > Personal < > Open source < > Business < > Explore < > Sign up < > Sign in < > Pricing < > Blog < > Support URL * Watch < > 39 < > * Star < > 534 < > * Fork < > 164 < > madhums < > / node-express-mongoose < > Code < > Issues 0 < > Pull requests 1 < > Wiki < > Pulse < > Graphs < > A boilerplate application for building web apps using express , mongoose
+to content < > URL / > Personal < > Open source < > Business < > Explore < > Sign up < > Sign in < > Pricing < > Blog < > Support URL * Watch < > 39 < > * Star < > 534 < > * Fork < > 164 < > madhums < > / node-express-mongoose < > Code < > Issues 0 < > Pull requests 1 < > Wiki < > Pulse < > Graphs < > A boilerplate application for building web apps using express , mongoose
+using the repository 's web address
+< > Jan 1 , 2014 Makefile < > update to express 4
+contributing < > Jan 1 , 2014 Makefile < > update to express 4
+add heroku stuff < > Jun 22 , 2013 URL < > update readme < > Jul 27 , 2015 URL < > Changed template engine from Swig to Jade < > Nov 26 , 2015 URL < > update to express 4
+use swig instead of jade < > Jun 10 , 2014 Procfile < > add heroku stuff < > Jun 22 , 2013 URL < > update readme < > Jul 27 , 2015 URL < > Changed template engine from Swig to Jade < > Nov 26 , 2015 URL < > update to express 4
+update readme < > Jul 27 , 2015 URL < > Changed template engine from Swig to Jade < > Nov 26 , 2015 URL < > update to express 4
+Swig to Jade < > Nov 26 , 2015 URL < > update to express 4
+URL < > update readme < > Jul 27 , 2015 URL < > Changed template engine from Swig to Jade < > Nov 26 , 2015 URL < > update to express 4
+Tasks before filtering: 76Tasks after filtering: 11

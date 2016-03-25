@@ -1,5 +1,41 @@
 === Title ===
-Object Modeling in <b>Node</b>.<b>js</b> with <b>Mongoose</b> | Heroku Dev Center
+Express.js and <b>Mongoose Example</b>: Building HackHall
 === URL ===
-https://devcenter.heroku.com/articles/nodejs-mongoose
+http://webapplog.com/express-js-and-mongoose-example-building-hackhall/
 
+to add file like this -LRB- below are fake values -RRB-
+add file like this -LRB- below are fake values -RRB-
+need to add file like this -LRB- below are fake values -RRB-
+get in -LRB- the ones from the file -RRB-
+to get in -LRB- the ones from the file -RRB-
+description * : main HackHall server file
+main HackHall server file
+* : description * : main HackHall server file
+* : main HackHall server file
+get user information
+URL The file might be interesting as well
+Directly call AngleList API with the token from the previous middleware to get user information : The full source code for files
+to get user information
+call AngleList API with the token from the previous middleware to get user information : The full source code for files
+is just an unapproved user object
+removes any session information
+is used for both the Profile page as well as by URL for user authentication
+used for both the Profile page as well as by URL for user authentication
+update information in their applications : Select a particular object with the function : The full source code of files : URL The last routes module that we bisect is
+Let the users update information in their applications : Select a particular object with the function : The full source code of files : URL The last routes module that we bisect is
+object -LRB- with approved = false by default -RRB- to the database : Let the users update information in their applications : Select a particular object with the function : The full source code of files : URL The last routes module that we bisect is
+add a user object -LRB- with approved = false by default -RRB- to the database : Let the users update information in their applications : Select a particular object with the function : The full source code of files : URL The last routes module that we bisect is
+removes specific posts from the database
+serve as an application object -LRB- when -RRB- : The full source code for : Mocha Tests One of the benefits of using REST API server architecture is that each route
+using REST API server architecture is that each route
+is that each route
+can also serve as an application object -LRB- when -RRB- : The full source code for : Mocha Tests One of the benefits of using REST API server architecture is that each route
+do n't store plain passwords/keys in the database
+store plain passwords/keys in the database
+should at leastsalt the passwords URL before storing them
+leastsalt the passwords URL before storing them
+am URL hi , thanks for this tutorial
+may use these HTML tags
+may use these HTML tags
+use these HTML tags
+Tasks before filtering: 299Tasks after filtering: 35

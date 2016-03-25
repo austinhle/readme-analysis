@@ -1,0 +1,12 @@
+=== Title ===
+<b>Node</b>.<b>js</b> MongoDB <b>Tutorial</b> using <b>Mongoose</b> - YouTube
+=== URL ===
+https://www.youtube.com/watch?v=5e1NEdfs4is
+
+Published on Apr 2 , 2014 This tutorial covers how to work with a MongoDB database using URL , URL ,
+covers how to work with a MongoDB database using URL , URL ,
+to work with a MongoDB database using URL , URL ,
+work with a MongoDB database using URL , URL ,
+is an awesome tool for managing connection , schema , document relations , getting , setting ,
+is on Plunkr ! : URL URL URL Tutorial for Beginners : URL URL The first step in this URL Mongoose tutorial is to install Mongoose
+Tasks before filtering: 100Tasks after filtering: 6

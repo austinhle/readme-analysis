@@ -1,5 +1,48 @@
 === Title ===
-Object Modeling in <b>Node</b>.<b>js</b> with <b>Mongoose</b> | Heroku Dev Center
+GitHub - joegoldbeck/<b>mongoose</b>-<b>encryption</b>: Simple <b>encryption</b> and <b>...</b>
 === URL ===
-https://devcenter.heroku.com/articles/nodejs-mongoose
+https://github.com/joegoldbeck/mongoose-encryption
 
+using the repository 's web address
+test < > test for additionalAuthenticated Fields
+test < > test for additionalAuthenticated Fields
+inserted into the field of the document
+removed from the document
+inserted back into the document as their original data types
+are inserted back into the document as their original data types
+include and
+is stored in format in the field with the plugin version prepended
+stored in format in the field with the plugin version prepended
+authenticating any fields used for authorization , such as , ,
+consider authenticating any fields used for authorization , such as , ,
+used for authorization , such as , ,
+therefore update the model name in Mongoose
+hooks that fire when parent validation fails
+are no subdocument hooks that fire when parent validation fails
+repair a parent doc after a failed save
+repair a parent doc after a failed save
+saved to the database
+are decrypted after they are saved to the database ,
+decrypted after they are saved to the database ,
+are saved to the database
+is stored in the database
+stored in the database
+wo n't immediately change what is stored in the database
+will change how documents are saved moving forwards
+change what is stored in the database
+change how documents are saved moving forwards
+started using them for a collection
+authenticate documents at will -LRB- as long as the model includes the plugin -RRB-
+using them for a collection
+can not change the following options once you 've started using them for a collection
+change the following options once you 've started using them for a collection
+'ve started using them for a collection
+are using mongoose-encryption on an empty collection
+Started with an Existing Collection If you are using mongoose-encryption on an empty collection , you can immediately begin to use it as above
+using mongoose-encryption on an empty collection
+using an earlier version of mongoose-encryption
+'re using an earlier version of mongoose-encryption
+store your keys
+store your keys
+review on version URL
+Tasks before filtering: 443Tasks after filtering: 42

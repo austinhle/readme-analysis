@@ -1,16 +1,39 @@
 === Title ===
-Getting Started with <b>Mongoose</b> and <b>Node</b>.<b>js</b> – A <b>Sample</b> Comments <b>...</b>
+TeskaLabs Blog · SeaCat Tutorial - Chapter 4: Using MongoDB with <b>...</b>
 === URL ===
-http://blog.ijasoneverett.com/2013/11/getting-started-with-mongoose-and-node-js-a-sample-comments-system/
+https://www.teskalabs.com/blog/tutorial_ch04_ios_rest_integration_mongodb
 
-have saved the file run the following code to download and install the nodejs client for mongoose
-download and install the nodejs client for mongoose
-saved the file run the following code to download and install the nodejs client for mongoose
-to download and install the nodejs client for mongoose
-include mongoose and get a reference to schema
-is include mongoose and get a reference to schema
-include mongoose
-Open and add the following code : The first thing we do is require mongoose and the Comment model before we can use it
-do is require mongoose and the Comment model before we can use it
-require mongoose and the Comment model before we can use it
-is require mongoose and the Comment model before we can use it
+stored in memory
+was stored in memory
+are many ways how to store data
+store data
+to store data
+are 4 NPM packages used in the application
+packages There are 4 NPM packages used in the application
+install this package
+to install this package
+Type in the command line to install this package
+store data
+Type in the command line to install this package
+install this package
+to install this package
+to install this package
+Type in the command line to install this package
+install this package
+to install this package
+Type in the command line to install this package
+install this package
+can simply incorporate them in our script -LRB- everything will be in one -RRB-
+incorporate them in our script -LRB- everything will be in one -RRB-
+store any data
+create an interface that is able to work with following : * GET / api/movies - get a list of all movies stored in memory
+going to create an interface that is able to work with following : * GET / api/movies - get a list of all movies stored in memory
+are going to create an interface that is able to work with following : * GET / api/movies - get a list of all movies stored in memory
+stored in memory
+is able to work with following : * GET / api/movies - get a list of all movies stored in memory
+to create an interface that is able to work with following : * GET / api/movies - get a list of all movies stored in memory
+get a list of all movies stored in memory
+get the detail of a particular movie using its id
+using its id
+is related to error handling in case the request is invalid
+Tasks before filtering: 187Tasks after filtering: 33

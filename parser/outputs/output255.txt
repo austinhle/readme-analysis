@@ -1,0 +1,37 @@
+=== Title ===
+<b>Inheritance</b> with MongoDB and <b>Mongoose</b>
+=== URL ===
+https://blog.verticalaxisbd.com/inheritance-mongodb-mongoose/
+
+'s inheritance of database models
+was not possible with the version I was using
+found that populating child fields from the parent/base schema was not possible with the version I was using
+populating child fields from the parent/base schema
+to populate the models for a car type
+want to be able to populate the models for a car type
+populate the models for a car type
+be able to populate the models for a car type
+is just the default fields that all other models will include
+to be able to populate the models for a car type
+have a virtual property which is actually the reference to the type of the schema
+is actually the reference to the type of the schema
+will return the type of Schema
+return the type of Schema
+that each car type is inherited from the schema using the method
+is inherited from the schema using the method
+using the method
+inherited from the schema using the method
+query these models is where it gets interesting
+find query on the model returns
+querying the schema
+pass in a type parameter when querying the schema
+query each model separately
+query a single vehicle type
+to query a single vehicle type
+could either pass in a type parameter when querying the schema
+either pass in a type parameter when querying the schema
+wanted to query a single vehicle type
+were querying the parent schema for Audis
+querying the parent schema for Audis
+then used them in the model ? If we were querying the parent schema for Audis
+Tasks before filtering: 137Tasks after filtering: 31

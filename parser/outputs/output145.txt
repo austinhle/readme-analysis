@@ -1,0 +1,47 @@
+=== Title ===
+Creating RESTful APIs With <b>NodeJS</b> and MongoDB Tutorial (Part II <b>...</b>
+=== URL ===
+http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb
+
+, , , , ... Here 's is a summary what we want to implement : Resource -LRB- URI -RRB- POST -LRB- create -RRB- GET -LRB- read -RRB- PUT -LRB- update -RRB- DELETE -LRB- destroy -RRB- / todos create new task list tasks N/A -LRB- update all -RRB- N/A -LRB- destroy all -RRB- / todos/1 error show task ID 1 update task ID 1 destroy task ID 1 NOTES : * Format will be JSON
+, , , ... Here 's is a summary what we want to implement : Resource -LRB- URI -RRB- POST -LRB- create -RRB- GET -LRB- read -RRB- PUT -LRB- update -RRB- DELETE -LRB- destroy -RRB- / todos create new task list tasks N/A -LRB- update all -RRB- N/A
+, , ... Here 's is a summary what we want to implement : Resource -LRB- URI -RRB- POST -LRB- create -RRB- GET -LRB- read -RRB- PUT -LRB- update -RRB- DELETE -LRB- destroy -RRB- / todos create new task list tasks N/A -LRB- update all -RRB- N/A
+is a document-oriented NoSQL database -LRB- Big Data ready -RRB-
+stores data in JSON-like format
+stores data in JSON-like format
+return an array with data
+queries Mongoose Update Each model has an method which accepts multiple updates -LRB- for batch updates because does n't return an array with data -RRB-
+does n't return an array with data
+is a complete web framework solution
+added to ExpressJS stack using for any method
+are added to ExpressJS stack using for any method
+using for any method
+log the request method
+know you have not created any route yet
+created any route yet
+have not created any route yet
+create the routes
+to create the routes
+create the routes
+time to create the routes
+install dependencies
+Create the app typing , install dependencies
+to require mongoose in the
+need to require mongoose in the
+require mongoose in the
+Creating the Todo model with Mongoose It is show time ! All the above
+returns an empty array you are all set
+get errors
+going to add the ability to create using mongoose
+are going to add the ability to create using mongoose
+add the ability to create using mongoose
+using mongoose
+create using mongoose
+to add the ability to create using mongoose
+to create using mongoose
+showing just create route
+create route
+routes/URL -LRB- showing just create route -RRB-
+id This is a snap with < > and
+is a snap with < > and
+Tasks before filtering: 473Tasks after filtering: 41

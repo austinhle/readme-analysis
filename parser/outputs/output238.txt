@@ -1,0 +1,73 @@
+=== Title ===
+<b>Mongoose</b> - <b>Node</b>.<b>js</b> + MongoDB with <b>Mongoose Tutorial</b>
+=== URL ===
+http://www.javabeat.net/mongoose-nodejs-mongodb/
+
+to set up the environment for this tutorial
+set up the environment for this tutorial
+knows how to set up the environment for this tutorial
+using Mongoose * Querying the DB using Mongoose * Updating existing documents * Deleting existing documents * Example Application Mongoose API Mongoose is an mongodb object modelling API for URL
+provides a straight-forward , schema-based solution to modeling your application data
+provides a straight-forward , schema-based solution to modeling your application data
+modeling your application data
+to modeling your application data
+would have to download the Node package for mongoose API using the following command :
+have to download the Node package for mongoose API using the following command :
+To use mongoose
+use mongoose
+download the Node package for mongoose API using the following command
+taken from the Mongoose API Home page -RRB- To use mongoose
+to download the Node package for mongoose API using the following command :
+download the Node package for mongoose API using the following command :
+need to get a connection object
+to get a connection object
+get a connection object
+like whether an index needs to be created for the attribute
+created for this example
+is the sample Schema I created for this example
+accepts the following : name of the model , name of the schema it has to use to create model class , name of the collection
+create model class , name of the collection
+to use to create model class , name of the collection
+to create model
+to create model class , name of the collection
+create model
+has to use to create model class , name of the collection
+use to create model class , name of the collection
+to create Book Model from the schema
+create Book Model from the schema
+is the code to create Book Model from the schema
+show you few examples of inserting records , querying for records , editing records
+will show you few examples of inserting records , querying for records , editing records
+save the data to the DB
+to save the data to the DB
+Inserting data using Mongoose We create an instance of the Model class
+invoke method on the instance to save the data to the DB
+provide a callback which gets
+inserting the data
+invoking the method we also provide a callback which gets
+creates two instances of Book model class
+creates two instances of Book model class
+using Mongoose There are multiple APIs which one can use to query the collection in mongoDB
+to query the collection in mongoDB
+query the collection in mongoDB
+are multiple APIs which one can use to query the collection in mongoDB
+can use to query the collection in mongoDB
+use to query the collection in mongoDB
+Querying the DB using Mongoose There are multiple APIs which one can use to query the collection in mongoDB
+use API to query the collection
+query the collection
+to query the collection
+having less than 100 pages : Updating existing documents Document can be updated by using the API as shown below : Deleting existing documents Documents can be deleted from the collection by using the API
+queries for documents having less than 100 pages : Updating existing documents Document can be updated by using the API as shown below : Deleting existing documents Documents can be deleted from the collection by using the API
+deleted from the collection by using the API
+selecting the documents to be deleted
+specifying the condition for selecting the documents to be deleted
+be deleted from the collection by using the API
+defines a function which queries for documents having less than 100 pages : Updating existing documents Document can be updated by using the API as shown below : Deleting existing documents Documents can be deleted from the collection by using the API
+Deleting existing documents Documents can be deleted from the collection by using the API
+can be deleted from the collection by using the API
+console we get the following : Summary I hope that this tutorial would be very much helpful to understand how Mongoose API can be used for connecting to the MongoDB
+querying for data from the mongo console we get the following : Summary I hope that this tutorial would be very much helpful to understand how Mongoose API can be used for connecting to the MongoDB
+get the following : Summary I hope that this tutorial would be very much helpful to understand how Mongoose API can be used for connecting to the MongoDB
+hope that this tutorial would be very much helpful to understand how Mongoose API can be used for connecting to the MongoDB
+Tasks before filtering: 223Tasks after filtering: 67

@@ -1,0 +1,46 @@
+=== Title ===
+Beer Locker: Building a <b>RESTful API</b> with <b>Node</b> - CRUD - Scott Smith
+=== URL ===
+http://scottksmith.com/blog/2014/05/05/beer-locker-building-a-restful-api-with-node-crud
+
+Add the following code to the newly created file
+exported the Mongoose beer model for use within our application
+use this package with our Express application
+need to use this package with our Express application
+to use this package with our Express application
+is creating a new route with the prefix ` / beers '
+creating a new route with the prefix ` / beers '
+are doing here is creating a new route with the prefix ` / beers '
+doing here is creating a new route with the prefix ` / beers '
+call save on the Beer model which is a Mongoose function that will save the model to the MongoDB database
+will save the model to the MongoDB database
+save on the Beer model which is a Mongoose function that will save the model to the MongoDB database
+is a Mongoose function that will save the model to the MongoDB database
+save the model to the MongoDB database
+create a new Beer model
+doing here is creating a new route to the prefix ` / beers '
+creating a new route to the prefix ` / beers '
+are doing here is creating a new route to the prefix ` / beers '
+is creating a new route to the prefix ` / beers '
+will query the MongoDB database
+query the MongoDB database
+call find which will query the MongoDB database
+find which will query the MongoDB database
+use the Mongoose Beer model to call find which will query the MongoDB database
+query the MongoDB database
+to call find which will query the MongoDB database
+guessed it , let 's update the file again
+update the file again
+let 's update the file again
+used the same route
+used the same route
+Using the same URL you used to GET a single beer , update Postman to use PUT , set data type to ,
+set data type to
+to GET a single beer , update Postman to use PUT , set data type to ,
+used to GET a single beer , update Postman to use PUT , set data type to ,
+GET a single beer , update Postman to use PUT , set data type to ,
+be diving into creating user accounts
+diving into creating user accounts
+creating user accounts
+will be diving into creating user accounts
+Tasks before filtering: 299Tasks after filtering: 40

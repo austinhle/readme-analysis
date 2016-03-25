@@ -1,0 +1,8 @@
+=== Title ===
+[<b>Mongoose</b>] Foreign Key 설정 및 <b>Auto Increment</b> Number 플러그인
+=== URL ===
+http://mobicon.tistory.com/292
+
+var mongoose = require -LRB- ` mongoose ' -RRB- , Schema = URL var personSchema = Schema -LRB- -LCB- _ id : Number , name : String , age : Number , stories : -LSB- -LCB- type : URL , ref : ` Story ' -RCB- -RSB- / / 여러 이야기 - 배열 -RCB- -RRB- ; var storySchema = Schema -LRB- -LCB- _ creator : -LCB- type : Number , ref : ` Person ' -RCB- , / / 글쓴이 한 사람 title : String , fans : -LSB- -LCB- type : Number , ref : ` Person ' -RCB- -RSB- / / 해당 글에 대한 여러 팬들 - 배열 -RCB- -RRB- ; var Story = URL -LRB- ` Story ' , storySchema -RRB- ;
+require -LRB- ` mongoose ' -RRB- , Schema = URL var personSchema = Schema -LRB- -LCB- _ id : Number , name : String , age : Number , stories : -LSB- -LCB- type : URL , ref : ` Story ' -RCB- -RSB- / / 여러 이야기 - 배열 -RCB- -RRB- ; var storySchema = Schema -LRB- -LCB- _ creator : -LCB- type : Number , ref : ` Person ' -RCB- , / / 글쓴이 한 사람 title : String , fans : -LSB- -LCB- type : Number , ref : ` Person ' -RCB- -RSB- / / 해당 글에 대한 여러 팬들 - 배열 -RCB- -RRB- ; var Story = URL -LRB- ` Story ' , storySchema -RRB- ;
+Tasks before filtering: 31Tasks after filtering: 2

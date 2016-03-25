@@ -1,8 +1,13 @@
 === Title ===
-Simple example - <b>Node</b>.<b>js</b>, Restify, MongoDb and <b>Mongoose</b> <b>...</b>
+Querying sub-documents and sub-sub-documents in <b>Mongoose</b>
 === URL ===
-https://cdnjs.com/libraries/backbone.js/tutorials/nodejs-restify-mongodb-mongoose
+https://coderwall.com/p/6v5rcw/querying-sub-documents-and-sub-sub-documents-in-mongoose
 
-see how we require our predefined model for messages and also our form template
-require our predefined model for messages and also our form template
-can see how we require our predefined model for messages and also our form template
+r \ nThis will create two users
+create two users
+will create two users
+r \ nRemember it is an array so you can do this to query them
+is an array so you can do this to query them
+n \ u003cp \ u003eRemember it is an array so you can do this to query them
+is an array so you can do this to query them
+Tasks before filtering: 127Tasks after filtering: 7

@@ -1,0 +1,34 @@
+=== Title ===
+<b>Node</b>.js, Express and <b>Mongoose tutorial</b>
+=== URL ===
+http://theholmesoffice.com/node-js-express-and-mongoose/
+
+has got our simple route
+got our simple route
+to do this is to use the URL file in the root of the project
+to use the URL file in the root of the project
+is to use the URL file in the root of the project
+Connect Mongoose The easiest way to do this is to use the URL file in the root of the project
+do this is to use the URL file in the root of the project
+use the URL file in the root of the project
+install any new packages into the project
+creating a file URL with the following content
+will start off by creating a file URL with the following content
+start off by creating a file URL with the following content
+create a file URL
+have a reusable connection created on application startup
+is designed to have a reusable connection created on application startup
+to have a reusable connection created on application startup
+designed to have a reusable connection created on application startup
+Let 's add it in to the require section at the top of the file , just after requiring Express
+add it in to the require section at the top of the file , just after requiring Express
+Displaying the data on the webpage When we created the static data version in Express
+created the static data version in Express
+used in my earlier Mongoose tutorial
+are searching for * The URL functions as a callback to build the page -- including the list of teams -- when the database query completes So let 's modify routes/URL like so
+searching for * The URL functions as a callback to build the page -- including the list of teams -- when the database query completes So let 's modify routes/URL like so
+is very similar code to that used in my earlier Mongoose tutorial
+start building a web app we can actually use in the real world
+building a web app we can actually use in the real world
+'ll start building a web app we can actually use in the real world
+Tasks before filtering: 173Tasks after filtering: 28

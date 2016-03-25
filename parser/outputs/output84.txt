@@ -1,10 +1,20 @@
 === Title ===
-Easily Develop <b>Node</b>.js and MongoDB Apps with <b>Mongoose</b> | Scotch
+GitHub - madhums/<b>node</b>-express-<b>mongoose</b>-demo: A simple demo <b>...</b>
 === URL ===
-https://scotch.io/tutorials/using-mongoosejs-in-node-js-and-mongodb-applications
+https://github.com/madhums/node-express-mongoose-demo
 
-use mongoose
-to add to our Schema to have the date added to if this is the first save , and to on every save
-add to our Schema to have the date added to if this is the first save , and to on every save
-to have the date added to if this is the first save , and to on every save
-is the code to add to our Schema to have the date added to if this is the first save , and to on every save
+using the repository 's web address
+used in everyday web development , with a fine touch of best practices
+signing up using facebook , twitter , github
+using facebook , twitter , github
+is a blog application where users -LRB- signing up using facebook , twitter , github
+use the boilerplate app
+URL * mongodb URL * imagemagick URL < > Install NOTE : Do not forget to set the facebook , twitter , google , linkedin
+use image uploads
+to set env variables for the imager config
+set env variables for the imager config
+to use image uploads
+do n't forget to set env variables for the imager config
+forget to set env variables for the imager config
+want to use image uploads
+Tasks before filtering: 129Tasks after filtering: 14

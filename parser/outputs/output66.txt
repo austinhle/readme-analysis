@@ -1,5 +1,19 @@
 === Title ===
-<b>Mongoose</b> ODM
+javascript - <b>Mongoose</b> promise &amp; <b>error handling</b> - Code Review <b>...</b>
 === URL ===
-http://mongoosejs.com/docs/2.7.x/docs/updating-documents.html
+http://codereview.stackexchange.com/questions/65199/mongoose-promise-error-handling
 
+is the error handling
+would show me the whole example as a chain of the find , save , create
+show me the whole example as a chain of the find , save , create
+use I could n't find a example that would show me the whole example as a chain of the find , save , create
+find a example that would show me the whole example as a chain of the find , save , create
+could n't find a example that would show me the whole example as a chain of the find , save , create
+to point out that your code handles some error situations silently , that 's never a good idea
+want to point out that your code handles some error situations silently , that 's never a good idea
+handles some error situations silently , that 's never a good idea
+point out that your code handles some error situations silently , that 's never a good idea
+Btw , I usually leave mongoose to handle all validation errors -LRB- including required fields -RRB-
+usually leave mongoose to handle all validation errors -LRB- including required fields -RRB-
+returning an error to the client
+Tasks before filtering: 152Tasks after filtering: 13

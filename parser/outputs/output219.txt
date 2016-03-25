@@ -1,0 +1,10 @@
+=== Title ===
+<b>Mongoose</b> ODM v4.4.7
+=== URL ===
+http://mongoosejs.com/
+
+to model your application data
+provides a straight-forward , schema-based solution to model your application data
+model your application data
+includes built-in type casting , validation , query building , business logic hooks
+Tasks before filtering: 12Tasks after filtering: 4

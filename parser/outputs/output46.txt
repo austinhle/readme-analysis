@@ -1,8 +1,52 @@
 === Title ===
-Simple <b>example</b> - <b>Node</b>.js, Restify, MongoDb and <b>Mongoose</b> <b>...</b>
+Password Authentication with <b>Mongoose</b> (Part 1): bcrypt
 === URL ===
-https://cdnjs.com/libraries/backbone.js/tutorials/nodejs-restify-mongodb-mongoose
+http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt
 
-require our predefined model for messages and also our form template
-see how we require our predefined model for messages and also our form template
-can see how we require our predefined model for messages and also our form template
+to subsequently use the encrypted password for login verification
+subsequently use the encrypted password for login verification
+recommended Coda Hale 's excellent article onhow to safely store a password URL
+to safely store a password URL
+'re not familiar with bcrypt
+safely store a password URL
+saving * The User model should be resistant to program logic errors , like double-encrypting the password on user updates * bcrypt interactions should be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+should be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+are n't too familiar with Mongoose schemas
+should ensure that the password is always encrypted before saving * The User model should be resistant to program logic errors , like double-encrypting the password on user updates * bcrypt interactions should be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+is always encrypted before saving * The User model should be resistant to program logic errors , like double-encrypting the password on user updates * bcrypt interactions should be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+ensure that the password is always encrypted before saving * The User model should be resistant to program logic errors , like double-encrypting the password on user updates * bcrypt interactions should be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+encrypted before saving * The User model should be resistant to program logic errors , like double-encrypting the password on user updates * bcrypt interactions should be performed asynchronously to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+to avoid blocking the event loop -LRB- bcrypt also exposes a synchronous API -RRB- Step 1 : The User Model Even if you are n't too familiar with Mongoose schemas
+To start things off , let 's create our bare bones representation of a user ; for the sake of this article , all
+let 's create our bare bones representation of a user
+create our bare bones representation of a user
+start things off , let 's create our bare bones representation of a user ; for the sake of this article , all
+bcrypt in particular uses
+hash the password before it 's saved to the database
+'s saved to the database
+will automatically hash the password before it 's saved to the database
+is some Mongoose middleware that will automatically hash the password before it 's saved to the database
+saved to the database
+is saved to the database
+saved to the database
+hashing the password when a document is saved to the database
+looks like : The above code will accomplish our goal of always hashing the password when a document is saved to the database
+will accomplish our goal of always hashing the password when a document is saved to the database
+accomplish our goal of always hashing the password when a document is saved to the database
+be careful if you 're interacting with documents that were not retrieved from the database , as any passwords will still be in cleartext
+is not invoked on operations , so you must use a if you want to update user passwords
+invoked on operations , so you must use a if you want to update user passwords
+use a if you want to update user passwords
+must use a if you want to update user passwords
+want to update user passwords
+to update user passwords
+update user passwords
+enforcing a maximum number of failed login attempts
+preventing brute-force attacks by enforcing a maximum number of failed login attempts
+'ll discuss preventing brute-force attacks by enforcing a maximum number of failed login attempts
+discuss preventing brute-force attacks by enforcing a maximum number of failed login attempts
+love to the Open Source projects that have made DevSmash possible , including : URL URL | Express URL | MongoDB URL
+Tasks before filtering: 196Tasks after filtering: 46

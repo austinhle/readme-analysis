@@ -1,5 +1,36 @@
 === Title ===
-GitHub - madhums/<b>node</b>-express-<b>mongoose</b>-demo: A simple demo <b>...</b>
+Rob Conery | Testing Your Model with Mocha, Mongo, and <b>NodeJS</b>
 === URL ===
-https://github.com/madhums/node-express-mongoose-demo
+http://rob.conery.io/2012/02/25/testing-your-model-with-mocha-mongo-and-nodejs/
 
+test framework with beautiful documentation * Mocha URL
+is something you run into with Javascript : the asynchronous nature of the language means that sometimes the test will finish before the assertion is made - which is a false positive
+Installs The first thing to do is install Mocha
+is install Mocha
+put this all into a Customer module so it 's nice
+installs for you where you can put your modules
+put your modules
+want to put this all into a Customer module so it 's nice
+can put your modules
+to put this all into a Customer module so it 's nice
+is a directory that Express installs for you where you can put your modules
+can explicitly decide what you want to share using the return statement
+decide what you want to share using the return statement
+want to share using the return statement
+using the return statement
+share using the return statement
+to share using the return statement
+'s a place where your modules get to hang
+use our new module we would do this : The require statement loads the file
+To use our new module we would do this : The require statement loads the file
+needs to know about your data so it can effectively query it
+know about your data so it can effectively query it
+to know about your data so it can effectively query it
+add a test record to test against
+to add a test record to test against
+want to add a test record to test against
+do n't like this kind of thing -LRB- testing against the database -RRB-
+know many people do n't like this kind of thing -LRB- testing against the database -RRB-
+like this kind of thing -LRB- testing against the database -RRB-
+testing against the database
+Tasks before filtering: 368Tasks after filtering: 30

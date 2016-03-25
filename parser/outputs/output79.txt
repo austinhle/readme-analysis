@@ -1,5 +1,10 @@
 === Title ===
-<b>Node</b>.<b>js</b> and MongoDB - Getting Started with <b>Mongoose</b>
+GitHub - proswdev/<b>mongoose</b>-bcrypt: <b>Mongoose</b> plugin adding field <b>...</b>
 === URL ===
-http://blog.modulus.io/getting-started-with-mongoose
+https://github.com/proswdev/mongoose-bcrypt
 
+using the repository 's web address
+set additional schema options
+creates instance methods
+used for encryption with bcrypt-nodejs
+Tasks before filtering: 98Tasks after filtering: 4

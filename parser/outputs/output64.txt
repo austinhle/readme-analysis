@@ -1,6 +1,54 @@
 === Title ===
-<b>Mongoose Documents</b> v4.4.7
+Mistakes You&#39;re Probably Making With <b>MongooseJS</b>, And How To <b>...</b>
 === URL ===
-http://mongoosejs.com/docs/documents.html
+https://thecodebarbarian.wordpress.com/2013/06/06/61/
 
-do n't need the document returned in our application and merely want to update a property in the database directly
+be stored in your MongoDB collection
+will be stored in your MongoDB collection
+is an object that defines the structure of any documents that will be stored in your MongoDB collection
+stored in your MongoDB collection
+defines the structure of any documents that will be stored in your MongoDB collection
+is a fairly standard wrapper around a database connection
+query the collection
+allowing you to query the collection
+to validate any documents you save to that collection
+gives you easy access to a named collection , allowing you to query the collection
+validate any documents you save to that collection
+is an object that gives you easy access to a named collection , allowing you to query the collection
+use the Schema to validate any documents you save to that collection
+save to that collection
+to query the collection
+query the collection
+has settled on some key principles for using Mongoose the right way : 1 Schema = 1 file
+settled on some key principles for using Mongoose the right way : 1 Schema = 1 file
+using Mongoose the right way : 1 Schema = 1 file
+have UserSchema as a nested schema of Group 's schema , because a User can be a part of multiple Groups
+should n't have UserSchema as a nested schema of Group 's schema , because a User can be a part of multiple Groups
+ought to be able to exist in our database without being part of any groups
+to be able to exist in our database without being part of any groups
+to exist in our database without being part of any groups
+be able to exist in our database without being part of any groups
+exist in our database without being part of any groups
+is best expressed in an example
+use the User model
+have to define it in every file where you use the User model
+best expressed in an example
+to define it in every file where you use the User model
+is that if you declare your model at the top of this particular file , you have to define it in every file where you use the User model
+define it in every file where you use the User model
+note that the `` bad '' listUsers is impossible to unit test
+is impossible to unit test
+write a test easily using Nodeunit
+can write a test easily using Nodeunit
+be the first to say that writing unit tests can be very annoying
+say that writing unit tests can be very annoying
+to say that writing unit tests can be very annoying
+'ll be the first to say that writing unit tests can be very annoying
+uses Nodeunit for our backend unit tests
+is an excellent library
+have it ! Mongoose is an excellent library
+MockUser -RCB- -RSB- -RSB- -RRB- ; in the unit test I would want to do something like this : methodStub = URL -LRB- User , ` find ' -RRB- ; ... URL -LRB- null , -LSB- -LCB- user1 -RCB- , -LCB- user2 -RCB- -RSB- -RRB- ; I cant get this to work , since di is using a factory method MockUser
+using a factory method MockUser
+is using a factory method MockUser
+get this to work , since di is using a factory method MockUser
+Tasks before filtering: 488Tasks after filtering: 48

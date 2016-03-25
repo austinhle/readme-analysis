@@ -1,8 +1,13 @@
 === Title ===
-Simple example - <b>Node</b>.<b>js</b>, Restify, MongoDb and <b>Mongoose</b> <b>...</b>
+GitHub - inlight-media/<b>node</b>-<b>mongoose</b>-soft-<b>delete</b>
 === URL ===
-https://cdnjs.com/libraries/backbone.js/tutorials/nodejs-restify-mongodb-mongoose
+https://github.com/inlight-media/node-mongoose-soft-delete
 
-see how we require our predefined model for messages and also our form template
-can see how we require our predefined model for messages and also our form template
-require our predefined model for messages and also our form template
+using the repository 's web address
+are invisible to all mongoose queries
+> remove -LRB- conditions , callback -RRB- Soft-deletes documents for
+remove -LRB- conditions , callback -RRB- Soft-deletes documents for
+Sets a field on the document/s that hides it/them from all mongoose queries unless specifically queried with conditions
+connect to a test mongodb at by default
+will connect to a test mongodb at by default
+Tasks before filtering: 70Tasks after filtering: 7

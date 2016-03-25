@@ -1,0 +1,16 @@
+=== Title ===
+<b>Mongoose</b> Quick Start v4.4.7
+=== URL ===
+http://mongoosejs.com/docs/
+
+include mongoose in our project
+include mongoose in our project
+is include mongoose in our project
+let 's assume that all following code is within this callback
+is within this callback
+assume that all following code is within this callback
+just logged all of the kittens in our db to the console
+returns the result as an array of kittens to the callback
+created a schema , added a custom document method , saved
+created a schema
+Tasks before filtering: 110Tasks after filtering: 10

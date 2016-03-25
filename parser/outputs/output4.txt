@@ -1,5 +1,31 @@
 === Title ===
-codetunnel/<b>mongoose</b>-<b>auto</b>-<b>increment</b> - Travis CI
+Write a todo list with <b>Express</b> and MongoDB | DreamersLab
 === URL ===
-https://travis-ci.org/codetunnel/mongoose-auto-increment
+http://dreamerslab.com/blog/en/write-a-todo-list-with-express-and-mongodb/
 
+updated the example code on Github
+need a ORM that defines database schema when using a schema-less database ?
+using a schema-less database
+defines database schema when using a schema-less database ?
+Using express command line tool to generate a project bootstrap Add file to project root Add
+express command line tool to generate a project bootstrap Add file to project root Add
+generate a project bootstrap Add file to project root Add
+to generate a project bootstrap Add file to project root Add
+Steps Using express command line tool to generate a project bootstrap Add file to project root Add
+Redirect the page back to index after the record is created
+create action to routes
+Add this create action to routes
+can be updated with user input text
+be updated with user input text
+Add an update action so the todo item can be updated with user input text
+updated with user input text
+are going to use cookie to store different user information so that ever user gets his own todo list
+to use cookie to store different user information so that ever user gets his own todo list
+store different user information so that ever user gets his own todo list
+to store different user information so that ever user gets his own todo list
+going to use cookie to store different user information so that ever user gets his own todo list
+get the same result when visiting this site , we are going to use cookie to store different user information so that ever user gets his own todo list
+use cookie to store different user information so that ever user gets his own todo list
+to get the current user id
+get the current user id
+Tasks before filtering: 187Tasks after filtering: 25

@@ -1,0 +1,38 @@
+=== Title ===
+<b>Node</b>.<b>js</b> and MongoDB - Getting Started with <b>Mongoose</b>
+=== URL ===
+http://blog.modulus.io/getting-started-with-mongoose
+
+creating storing documents in a collection using MongoDB
+is where you will create schemas
+will create schemas
+Note the use of the open event - this is where you will create schemas
+Note the use of the open event - this is where you will create schemas
+create schemas
+create instances of data that will be stored in documents
+be stored in documents
+to create instances of data that will be stored in documents
+will be stored in documents
+used to create instances of data that will be stored in documents
+are used to create instances of data that will be stored in documents
+stored in documents
+creating a Movie schema
+start off by creating a Movie schema
+create instances of the model
+is a constructor function that is used to create instances of the model
+used to create instances of the model
+Notice that the Movie model is capitalized
+is used to create instances of the model
+to create instances of the model
+is because when a model is compiled , the result is a constructor function that is used to create instances of the model
+created from the model constructor
+provide the newly created document , you can see this in what is logged to the console
+will provide the newly created document , you can see this in what is logged to the console
+can find any number of documents
+find any number of documents
+to easily create static helper functions URL for finding data
+easily create static helper functions URL for finding data
+also allows you to easily create static helper functions URL for finding data
+finding data
+included in Enterprise version
+Tasks before filtering: 162Tasks after filtering: 32
