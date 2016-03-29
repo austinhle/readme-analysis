@@ -62,7 +62,6 @@ public class MyParser {
 
   // Stanford NLP parser variables
   private final static String PCG_MODEL = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz";
-  // private final static String PCG_MODEL = "deps/englishPCFG.ser.gz";
   private final static TokenizerFactory<CoreLabel> tokenizerFactory = PTBTokenizer.factory(new CoreLabelTokenFactory(), "invertible=true");
   private final static LexicalizedParser parser = LexicalizedParser.loadModel(PCG_MODEL);
 
@@ -104,26 +103,12 @@ public class MyParser {
       System.out.println("Attempting to connect to database...");
       Connection db = DriverManager.getConnection(DB_URL, user, password);
       System.out.println("Successfully connected to database.");
-
-      System.out.println("Creating a table for results, if not already created...");
+        
       Statement st = db.createStatement();
-      st.executeUpdate(
-          "CREATE TABLE IF NOT EXISTS task ( " +
-          "   compute_index integer NOT NULL, " +
-          "   date timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL, " +
-          "   task text NOT NULL, " +
-          "   search_result_content_id integer REFERENCES searchresultcontent NOT NULL" +
-          ");"
-      );
-      System.out.println("Successfully created tabe.");
 
-      System.out.println("Adding indexes to the table...");
-      try {
-        st = db.createStatement();
-        st.executeUpdate("CREATE INDEX ON task (task)");
-      } catch(SQLException e) {
-        System.err.println("Error creating index.  May already exist?  Message: " + e);
-      }
+      // All table initialization takes place in ORM code elsewhere
+      // for elegance and consistency with the rest of the code base:
+      // https://github.com/andrewhead/Package-Qualifiers
 
       System.out.println("Getting index of this round of computation.");
       st = db.createStatement();
@@ -247,15 +232,7 @@ public class MyParser {
       for (Task task : tasks) {
         numTasksAfterFiltering++;
         keptTasks.add(task.taskString);
-        try {
-            PreparedStatement st = db.prepareStatement("INSERT INTO task (compute_index, task, search_result_content_id) VALUES (?, ?, ?)");
-            st.setInt(1, computeIndex);
-            st.setString(2, task.taskString);
-            st.setInt(3, searchResultContentId);
-            st.executeUpdate();
-        } catch (SQLException e) {
-            System.err.println("SQLException (" + e + ")");
-        }
+        saveTask(db, task, computeIndex, searchResultContentId);
       }
     }
 
@@ -265,8 +242,48 @@ public class MyParser {
       System.out.println(kt);
     }
     System.out.print("\n\n");
+  }
 
-    // TODO: Output data to PostgreSQL database.
+  private void saveTask(Connection db, Task task, int computeIndex, int searchResultContentId) {
+
+    try {
+
+        ResultSet rs;
+        int taskId, nounId, verbId;
+
+        // Create a new task
+        PreparedStatement st = db.prepareStatement(
+            "INSERT INTO task (compute_index, date, task, search_result_content_id) VALUES (?, now(), ?, ?) returning id"
+        );
+        st.setInt(1, computeIndex);
+        st.setString(2, task.taskString);
+        st.setInt(3, searchResultContentId);
+        rs = st.executeQuery();
+        rs.next();
+        taskId = rs.getInt(1);
+
+        // Save links to its verb and nouns
+        PreparedStatement verbLinkStatement = db.prepareStatement(
+            "INSERT INTO taskverb (task_id, verb_id) VALUES (?, ?)"
+        );
+        PreparedStatement nounLinkStatement = db.prepareStatement(
+            "INSERT INTO tasknoun (task_id, noun_id) VALUES (?, ?)"
+        );
+        for (String noun : task.lemmatizedNouns) {
+            nounId = get_or_create(db, "noun", "noun", noun);
+            nounLinkStatement.setInt(1, taskId);
+            nounLinkStatement.setInt(2, nounId);
+            nounLinkStatement.executeUpdate();
+        }
+        verbId = get_or_create(db, "verb", "verb", task.lemmatizedVerb);
+        verbLinkStatement.setInt(1, taskId);
+        verbLinkStatement.setInt(2, verbId);
+        verbLinkStatement.executeUpdate();
+
+    } catch (SQLException e) {
+        System.err.println("SQLException (" + e + ")");
+    }
+
   }
 
   private void findTasksFromTree(Tree root, Tree t, Set<Task> tasks) {
@@ -333,6 +350,52 @@ public class MyParser {
         findTasksFromTree(root, child, tasks);
       }
     }
+  }
+
+  /**
+   * This is a simplified analog to the 'get_or_create' methods on many ORMs,
+   * except that the value for only one field can be passed in the 'columnName'
+   * and 'value' parameters, and its value can only be a String.
+   */
+  private int get_or_create(Connection db, String tableName, String columnName, String value) throws SQLException {
+
+    int id;
+    int rowCount = 0;
+    ResultSet rs;
+
+    // If tableName or columnName are ever defined outside of this program,
+    // we will need to check them against some whitelist
+    PreparedStatement countStatement = db.prepareStatement(
+        "SELECT COUNT(*) FROM " + tableName + " WHERE " + columnName + " = ?"
+    );
+    PreparedStatement selectStatement = db.prepareStatement(
+        "SELECT id FROM " + tableName + " WHERE " + columnName  +  " = ?"
+    );
+    PreparedStatement insertStatement = db.prepareStatement(
+        "INSERT INTO " + tableName + " (" + columnName + ") VALUES (?) returning id"
+    );
+
+    countStatement.setString(1, value);
+    rs = countStatement.executeQuery();
+    rs.next();
+    rowCount = rs.getInt(1);
+
+    // If a record exists with this value, return its ID.
+    // Otherwise, create a new record for the value, and return its ID.
+    if (rowCount > 0) {
+      selectStatement.setString(1, value);
+      rs = selectStatement.executeQuery();
+      rs.next();
+      id = rs.getInt(1);
+    } else {
+      insertStatement.setString(1, value);
+      rs = insertStatement.executeQuery();
+      rs.next();
+      id = rs.getInt(1);
+    }
+
+    return id;
+    
   }
 
   private void filterTasksByQueries(Set<Task> tasks) {
