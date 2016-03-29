@@ -16,7 +16,6 @@ import edu.stanford.nlp.trees.TypedDependency;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
@@ -63,6 +62,7 @@ public class MyParser {
 
   // Stanford NLP parser variables
   private final static String PCG_MODEL = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz";
+  // private final static String PCG_MODEL = "deps/englishPCFG.ser.gz";
   private final static TokenizerFactory<CoreLabel> tokenizerFactory = PTBTokenizer.factory(new CoreLabelTokenFactory(), "invertible=true");
   private final static LexicalizedParser parser = LexicalizedParser.loadModel(PCG_MODEL);
 
@@ -93,17 +93,55 @@ public class MyParser {
 
     System.out.println("Successfully loaded credentials.");
 
+    int computeIndex;
+    int searchResultContentId = -1;
     String title = "";
     String url = "";
     String content = "";
+
 
     try {
       System.out.println("Attempting to connect to database...");
       Connection db = DriverManager.getConnection(DB_URL, user, password);
       System.out.println("Successfully connected to database.");
 
+      System.out.println("Creating a table for results, if not already created...");
       Statement st = db.createStatement();
-      ResultSet rs = st.executeQuery("SELECT query FROM query WHERE fetch_index = 14 AND query LIKE '%mongoose%' GROUP BY query");
+      st.executeUpdate(
+          "CREATE TABLE IF NOT EXISTS task ( " +
+          "   compute_index integer NOT NULL, " +
+          "   date timestamp without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL, " +
+          "   task text NOT NULL, " +
+          "   search_result_content_id integer REFERENCES searchresultcontent NOT NULL" +
+          ");"
+      );
+      System.out.println("Successfully created tabe.");
+
+      System.out.println("Adding indexes to the table...");
+      try {
+        st = db.createStatement();
+        st.executeUpdate("CREATE INDEX ON task (task)");
+      } catch(SQLException e) {
+        System.err.println("Error creating index.  May already exist?  Message: " + e);
+      }
+
+      System.out.println("Getting index of this round of computation.");
+      st = db.createStatement();
+      ResultSet rs = st.executeQuery("SELECT MAX(compute_index) FROM task");
+      int lastComputeIndex;
+      if (rs.next()) {
+        lastComputeIndex = rs.getInt(1);
+        if (rs.wasNull()) {
+          lastComputeIndex = -1;
+        }
+      } else {
+        lastComputeIndex = -1;
+      }
+      computeIndex = lastComputeIndex + 1;
+      System.out.println("Index of this computation: " + computeIndex);
+
+      st = db.createStatement();
+      rs = st.executeQuery("SELECT query FROM query WHERE fetch_index = 14 AND query LIKE '%mongoose%' GROUP BY query");
       System.out.println("Retrieved queries for task filtering.");
 
       while (rs.next()) {
@@ -123,25 +161,22 @@ public class MyParser {
       System.out.println("Created set of lemmatized query words for task filtering.");
 
       st = db.createStatement();
-      rs = st.executeQuery("SELECT title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id ORDER BY title DESC");
+      rs = st.executeQuery("SELECT searchresultcontent.id, title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id ORDER BY title DESC");
       System.out.println("Retrieved search result content to perform task extraction on.");
 
       int outIndex = 0;
 
       while (rs.next())
       {
-        title = rs.getString(1);
-        url = rs.getString(3);
-        content = rs.getString(4);
+        searchResultContentId = rs.getInt(1);
+        title = rs.getString(2);
+        url = rs.getString(4);
+        content = rs.getString(5);
 
-        try {
-          System.out.println("Title: " + title);
-          System.out.println("URL: " + url);
+        System.out.println("Title: " + title);
+        System.out.println("URL: " + url);
 
-          mp.extractTasks(title, url, content, outIndex);
-        } catch (IOException e) {
-          System.err.println(e);
-        }
+        mp.extractTasks(db, computeIndex, searchResultContentId, title, url, content, outIndex);
 
         outIndex++;
       }
@@ -152,7 +187,8 @@ public class MyParser {
     }
   }
 
-  public void extractTasks(String title, String url, String content, int outIndex) throws IOException {
+  public void extractTasks(Connection db, int computeIndex, int searchResultContentId, String title, String url, String content, int outIndex) {
+
     Document doc = Jsoup.parse(content);
     Element docBody = doc.body();
 
@@ -188,16 +224,6 @@ public class MyParser {
 
     System.out.println(String.format("=== Extracting content #%d ===", outIndex));
 
-    File file = new File(String.format("outputs/output%d.txt", outIndex));
-    BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-
-    bw.write("=== Title ===\n");
-    bw.write(title);
-    bw.write("\n");
-    bw.write("=== URL ===\n");
-    bw.write(url);
-    bw.write("\n\n");
-
     Set<String> keptTasks = new HashSet<String>();
     int numTasksTotal = 0;
     int numTasksAfterFiltering = 0;
@@ -221,23 +247,26 @@ public class MyParser {
       for (Task task : tasks) {
         numTasksAfterFiltering++;
         keptTasks.add(task.taskString);
-        bw.write(task.taskString);
-        bw.write("\n");
+        try {
+            PreparedStatement st = db.prepareStatement("INSERT INTO task (compute_index, task, search_result_content_id) VALUES (?, ?, ?)");
+            st.setInt(1, computeIndex);
+            st.setString(2, task.taskString);
+            st.setInt(3, searchResultContentId);
+            st.executeUpdate();
+        } catch (SQLException e) {
+            System.err.println("SQLException (" + e + ")");
+        }
       }
     }
 
     System.out.println("Number of tasks before filtering: " + numTasksTotal);
-    bw.write("Tasks before filtering: " + numTasksTotal);
     System.out.println("Remaining number of tasks after filtering: " + numTasksAfterFiltering);
-    bw.write("Tasks after filtering: " + numTasksAfterFiltering);
     for (String kt : keptTasks) {
       System.out.println(kt);
     }
     System.out.print("\n\n");
 
     // TODO: Output data to PostgreSQL database.
-
-    bw.close();
   }
 
   private void findTasksFromTree(Tree root, Tree t, Set<Task> tasks) {
