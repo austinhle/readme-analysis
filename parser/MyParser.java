@@ -16,7 +16,6 @@ import edu.stanford.nlp.trees.TypedDependency;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
@@ -93,17 +92,41 @@ public class MyParser {
 
     System.out.println("Successfully loaded credentials.");
 
+    int computeIndex;
+    int searchResultContentId = -1;
     String title = "";
     String url = "";
     String content = "";
+
 
     try {
       System.out.println("Attempting to connect to database...");
       Connection db = DriverManager.getConnection(DB_URL, user, password);
       System.out.println("Successfully connected to database.");
-
+        
       Statement st = db.createStatement();
-      ResultSet rs = st.executeQuery("SELECT query FROM query WHERE fetch_index = 14 AND query LIKE '%mongoose%' GROUP BY query");
+
+      // All table initialization takes place in ORM code elsewhere
+      // for elegance and consistency with the rest of the code base:
+      // https://github.com/andrewhead/Package-Qualifiers
+
+      System.out.println("Getting index of this round of computation.");
+      st = db.createStatement();
+      ResultSet rs = st.executeQuery("SELECT MAX(compute_index) FROM task");
+      int lastComputeIndex;
+      if (rs.next()) {
+        lastComputeIndex = rs.getInt(1);
+        if (rs.wasNull()) {
+          lastComputeIndex = -1;
+        }
+      } else {
+        lastComputeIndex = -1;
+      }
+      computeIndex = lastComputeIndex + 1;
+      System.out.println("Index of this computation: " + computeIndex);
+
+      st = db.createStatement();
+      rs = st.executeQuery("SELECT query FROM query WHERE fetch_index = 14 AND query LIKE '%mongoose%' GROUP BY query");
       System.out.println("Retrieved queries for task filtering.");
 
       while (rs.next()) {
@@ -123,25 +146,22 @@ public class MyParser {
       System.out.println("Created set of lemmatized query words for task filtering.");
 
       st = db.createStatement();
-      rs = st.executeQuery("SELECT title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id ORDER BY title DESC");
+      rs = st.executeQuery("SELECT searchresultcontent.id, title, snippet, url, content FROM searchresultcontent JOIN searchresult ON search_result_id = searchresult.id ORDER BY title DESC");
       System.out.println("Retrieved search result content to perform task extraction on.");
 
       int outIndex = 0;
 
       while (rs.next())
       {
-        title = rs.getString(1);
-        url = rs.getString(3);
-        content = rs.getString(4);
+        searchResultContentId = rs.getInt(1);
+        title = rs.getString(2);
+        url = rs.getString(4);
+        content = rs.getString(5);
 
-        try {
-          System.out.println("Title: " + title);
-          System.out.println("URL: " + url);
+        System.out.println("Title: " + title);
+        System.out.println("URL: " + url);
 
-          mp.extractTasks(title, url, content, outIndex);
-        } catch (IOException e) {
-          System.err.println(e);
-        }
+        mp.extractTasks(db, computeIndex, searchResultContentId, title, url, content, outIndex);
 
         outIndex++;
       }
@@ -152,7 +172,8 @@ public class MyParser {
     }
   }
 
-  public void extractTasks(String title, String url, String content, int outIndex) throws IOException {
+  public void extractTasks(Connection db, int computeIndex, int searchResultContentId, String title, String url, String content, int outIndex) {
+
     Document doc = Jsoup.parse(content);
     Element docBody = doc.body();
 
@@ -188,16 +209,6 @@ public class MyParser {
 
     System.out.println(String.format("=== Extracting content #%d ===", outIndex));
 
-    File file = new File(String.format("outputs/output%d.txt", outIndex));
-    BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-
-    bw.write("=== Title ===\n");
-    bw.write(title);
-    bw.write("\n");
-    bw.write("=== URL ===\n");
-    bw.write(url);
-    bw.write("\n\n");
-
     Set<String> keptTasks = new HashSet<String>();
     int numTasksTotal = 0;
     int numTasksAfterFiltering = 0;
@@ -221,23 +232,58 @@ public class MyParser {
       for (Task task : tasks) {
         numTasksAfterFiltering++;
         keptTasks.add(task.taskString);
-        bw.write(task.taskString);
-        bw.write("\n");
+        saveTask(db, task, computeIndex, searchResultContentId);
       }
     }
 
     System.out.println("Number of tasks before filtering: " + numTasksTotal);
-    bw.write("Tasks before filtering: " + numTasksTotal);
     System.out.println("Remaining number of tasks after filtering: " + numTasksAfterFiltering);
-    bw.write("Tasks after filtering: " + numTasksAfterFiltering);
     for (String kt : keptTasks) {
       System.out.println(kt);
     }
     System.out.print("\n\n");
+  }
 
-    // TODO: Output data to PostgreSQL database.
+  private void saveTask(Connection db, Task task, int computeIndex, int searchResultContentId) {
 
-    bw.close();
+    try {
+
+        ResultSet rs;
+        int taskId, nounId, verbId;
+
+        // Create a new task
+        PreparedStatement st = db.prepareStatement(
+            "INSERT INTO task (compute_index, date, task, search_result_content_id) VALUES (?, now(), ?, ?) returning id"
+        );
+        st.setInt(1, computeIndex);
+        st.setString(2, task.taskString);
+        st.setInt(3, searchResultContentId);
+        rs = st.executeQuery();
+        rs.next();
+        taskId = rs.getInt(1);
+
+        // Save links to its verb and nouns
+        PreparedStatement verbLinkStatement = db.prepareStatement(
+            "INSERT INTO taskverb (task_id, verb_id) VALUES (?, ?)"
+        );
+        PreparedStatement nounLinkStatement = db.prepareStatement(
+            "INSERT INTO tasknoun (task_id, noun_id) VALUES (?, ?)"
+        );
+        for (String noun : task.lemmatizedNouns) {
+            nounId = get_or_create(db, "noun", "noun", noun);
+            nounLinkStatement.setInt(1, taskId);
+            nounLinkStatement.setInt(2, nounId);
+            nounLinkStatement.executeUpdate();
+        }
+        verbId = get_or_create(db, "verb", "verb", task.lemmatizedVerb);
+        verbLinkStatement.setInt(1, taskId);
+        verbLinkStatement.setInt(2, verbId);
+        verbLinkStatement.executeUpdate();
+
+    } catch (SQLException e) {
+        System.err.println("SQLException (" + e + ")");
+    }
+
   }
 
   private void findTasksFromTree(Tree root, Tree t, Set<Task> tasks) {
@@ -304,6 +350,52 @@ public class MyParser {
         findTasksFromTree(root, child, tasks);
       }
     }
+  }
+
+  /**
+   * This is a simplified analog to the 'get_or_create' methods on many ORMs,
+   * except that the value for only one field can be passed in the 'columnName'
+   * and 'value' parameters, and its value can only be a String.
+   */
+  private int get_or_create(Connection db, String tableName, String columnName, String value) throws SQLException {
+
+    int id;
+    int rowCount = 0;
+    ResultSet rs;
+
+    // If tableName or columnName are ever defined outside of this program,
+    // we will need to check them against some whitelist
+    PreparedStatement countStatement = db.prepareStatement(
+        "SELECT COUNT(*) FROM " + tableName + " WHERE " + columnName + " = ?"
+    );
+    PreparedStatement selectStatement = db.prepareStatement(
+        "SELECT id FROM " + tableName + " WHERE " + columnName  +  " = ?"
+    );
+    PreparedStatement insertStatement = db.prepareStatement(
+        "INSERT INTO " + tableName + " (" + columnName + ") VALUES (?) returning id"
+    );
+
+    countStatement.setString(1, value);
+    rs = countStatement.executeQuery();
+    rs.next();
+    rowCount = rs.getInt(1);
+
+    // If a record exists with this value, return its ID.
+    // Otherwise, create a new record for the value, and return its ID.
+    if (rowCount > 0) {
+      selectStatement.setString(1, value);
+      rs = selectStatement.executeQuery();
+      rs.next();
+      id = rs.getInt(1);
+    } else {
+      insertStatement.setString(1, value);
+      rs = insertStatement.executeQuery();
+      rs.next();
+      id = rs.getInt(1);
+    }
+
+    return id;
+    
   }
 
   private void filterTasksByQueries(Set<Task> tasks) {
