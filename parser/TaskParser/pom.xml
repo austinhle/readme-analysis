@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.tutorons.packagesearch</groupId>
-  <artifactId>TaskParser</artifactId>
+  <artifactId>task-parser</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>TaskParser</name>
+  <version>0.0.0</version>
+  <name>task-parser</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -36,4 +36,37 @@
       <version>9.4.1208</version>
     </dependency>
   </dependencies>
+  <!--
+    With this addition, we build a JAR with dependencies built in with "mvn install"
+    The following target with dependencies built in is based on the advice from two sources:
+    * http://stackoverflow.com/questions/574594/how-can-i-create-an-executable-jar-with-dependencies-using-maven
+    * http://stackoverflow.com/questions/1814526/problem-building-executable-jar-with-maven
+  -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+          <archive>
+            <manifest>
+              <mainClass>com.tutorons.packagesearch.TaskParser</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
