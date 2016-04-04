@@ -1,6 +1,0 @@
-=== Title ===
-ForestAdmin/forest-express-<b>mongoose</b> - Travis CI
-=== URL ===
-https://travis-ci.org/ForestAdmin/forest-express-mongoose
-
-Tasks before filtering: 12Tasks after filtering: 0

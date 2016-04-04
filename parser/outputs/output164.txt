@@ -1,8 +1,0 @@
-=== Title ===
-<b>NodeJS</b> - Using BCrypt for Database <b>Encryption</b> - Tutorial 9 - YouTube
-=== URL ===
-https://www.youtube.com/watch?v=au2pDQ_tgD8
-
-Published on Mar 28 , 2015 Encrypting passwords using BCrypt to save in our mongoDB
-Encrypting passwords using BCrypt to save in our mongoDB
-Tasks before filtering: 85Tasks after filtering: 2

@@ -1,6 +1,0 @@
-=== Title ===
-Develop a <b>RESTful API</b> Using <b>Node</b>.js With Express and <b>Mongoose</b>
-=== URL ===
-https://pixelhandler.com/posts/develop-a-restful-api-using-nodejs-with-express-and-mongoose
-
-Tasks before filtering: 0Tasks after filtering: 0

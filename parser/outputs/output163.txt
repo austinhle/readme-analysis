@@ -1,7 +1,0 @@
-=== Title ===
-<b>Select by ID</b> with <b>Mongoose</b> and Express - <b>NodeJS</b> Video Tutorial <b>...</b>
-=== URL ===
-https://egghead.io/lessons/nodejs-select-by-id-with-mongoose-and-express
-
-get access to all lessons ! Plus direct HD download for offline use , subscriber comment forums ,
-Tasks before filtering: 18Tasks after filtering: 1

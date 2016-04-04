@@ -1,7 +1,0 @@
-=== Title ===
-Querying MongoDB from Express using <b>Mongoose</b> for <b>Node</b>.<b>js</b> Code <b>...</b>
-=== URL ===
-http://runnable.com/U0MpcpIzdaRkX2VH/querying-mongodb-from-express-using-mongoose-for-node-js
-
-using express
-Tasks before filtering: 35Tasks after filtering: 1

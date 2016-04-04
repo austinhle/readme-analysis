@@ -1,6 +1,0 @@
-=== Title ===
-<b>node</b>-<b>gyp</b>コンパイル時に怒られるときは素直にpythonを2.7系におとす <b>...</b>
-=== URL ===
-http://shuzo-kino.hateblo.jp/entry/2015/06/15/234057
-
-Tasks before filtering: 2Tasks after filtering: 0

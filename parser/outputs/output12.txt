@@ -1,7 +1,0 @@
-=== Title ===
-The <b>Node</b>.JS <b>MongoDB</b> Driver Manual
-=== URL ===
-http://mongodb.github.io/node-mongodb-native/1.4/
-
-> * MongoClient connection pooling < >
-Tasks before filtering: 38Tasks after filtering: 1

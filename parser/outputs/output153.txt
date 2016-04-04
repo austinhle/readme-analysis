@@ -1,6 +1,0 @@
-=== Title ===
-codetunnel/<b>mongoose</b>-<b>auto</b>-<b>increment</b> - Travis CI
-=== URL ===
-https://travis-ci.org/codetunnel/mongoose-auto-increment
-
-Tasks before filtering: 12Tasks after filtering: 0

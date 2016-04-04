@@ -1,9 +1,0 @@
-=== Title ===
-<b>Mongoose</b> ODM
-=== URL ===
-http://mongoosejs.com/docs/2.7.x/docs/updating-documents.html
-
-Updates all documents matching using the clause
-are casted to their appropriate types when using
-casted to their appropriate types when using
-Tasks before filtering: 33Tasks after filtering: 3
