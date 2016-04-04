@@ -1,1 +1,9 @@
+# Java output
 target
+
+# Database credentials
+*-config.json
+
+# Text editor files
+.*.swp
+.*.swo

@@ -15,10 +15,10 @@ import edu.stanford.nlp.trees.GrammaticalRelation;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TypedDependency;
 
-import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.charset.StandardCharsets;
 import java.io.FileWriter;
-import java.io.FileReader;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
 import java.sql.*;
@@ -39,6 +39,9 @@ import org.jsoup.examples.HtmlToPlainText;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import org.json.JSONObject;
+
 
 public class TaskParser {
   public enum Filter {
@@ -74,16 +77,12 @@ public class TaskParser {
   );
 
   // PostgreSQL variables
-  private final static String DB_URL = "jdbc:postgresql://clarence.eecs.berkeley.edu/fetcher";
-  private final static String DB_CREDENTIALS = "credentials.txt";
+  private final static String DB_CREDENTIALS = "credentials.json";
 
   // Stanford NLP parser variables
   private final static String PCG_MODEL = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz";
   private final static TokenizerFactory<CoreLabel> tokenizerFactory = PTBTokenizer.factory(new CoreLabelTokenFactory(), "invertible=true");
   private final static LexicalizedParser parser = LexicalizedParser.loadModel(PCG_MODEL);
-
-  private static String user = "";
-  private static String password = "";
 
   private static Set<Query> queries = new HashSet<Query>();
 
@@ -101,16 +100,20 @@ public class TaskParser {
     TaskParser mp = new TaskParser();
 
     // Load credentials
+    String text;
     try {
-      BufferedReader br = new BufferedReader(new FileReader(new File(credentialsPath)));
-      user = br.readLine();
-      password = br.readLine();
-      br.close();
+      text = new String(Files.readAllBytes(Paths.get(credentialsPath)), StandardCharsets.UTF_8);
     } catch (IOException e) {
       System.out.println(e);
+      return;
     }
 
-    if (user.equals("") || password.equals("")) {
+    JSONObject obj = new JSONObject(text);
+    String username = obj.getString("dbusername");
+    String password = obj.getString("dbpassword");
+    String dbUrl = "jdbc:postgresql://" + obj.getString("host") + "/" + obj.getString("database");
+
+    if (username.equals("") || password.equals("")) {
       System.err.println("Empty credentials were loaded. Please check credentials file.");
       return;
     }
@@ -125,7 +128,7 @@ public class TaskParser {
 
     try {
       System.out.println("Attempting to connect to database...");
-      Connection db = DriverManager.getConnection(DB_URL, user, password);
+      Connection db = DriverManager.getConnection(dbUrl, username, password);
       System.out.println("Successfully connected to database.");
 
       Statement st = db.createStatement();
