@@ -4,7 +4,7 @@
   <groupId>com.tutorons.packagesearch</groupId>
   <artifactId>task-parser</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>task-parser</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -54,6 +54,8 @@
         <artifactId>maven-assembly-plugin</artifactId>
         <version>2.6</version>
         <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
