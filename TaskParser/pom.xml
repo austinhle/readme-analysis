@@ -4,7 +4,7 @@
   <groupId>com.tutorons.packagesearch</groupId>
   <artifactId>task-parser</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <name>task-parser</name>
   <url>http://maven.apache.org</url>
   <dependencies>
